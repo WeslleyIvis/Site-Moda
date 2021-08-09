@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="javascript/javascript.js"></script>
+
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: black;
+        }
+        .img {
+            background-image: url('imagens/Modelo-0.jpeg');
+            background-size: cover;
+            height: 500px;
+            width: 500px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <img src="imagens/Modelo-0.jpeg" class="abrir_modal img_modal" onclick="abrirModal()">
+
+    <div class="fundo_modal" id="modal">
+        <div class="modal">
+            <img src="imagens/Modelo-0.jpeg">
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        </div>
+    </div>
+
+    <div class="img img_modal abrir_modal img_modal" onclick="abrirModal()"></div>
+
+    <div class="fundo_modal" id="modal">
+       
+            <div class="img"></div>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        
+    </div>
+
+    <div class="img categoria-1 categoria img_modal" onclick="abrirModal()"></div>
+
+    <div class="fundo_modal" id="modal">
+        <div class="modal">
+            <div class="categoria-1"></div>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        </div>
+    </div>
+
+    <div class="categoria-2 categoria img_modal" onclick="abrirModal()"> </div>
+
+    <div class="fundo_modal" id="modal">
+        <div class="modal">
+            <div class="imagem-1"></div>
+            <span class="fechar" onclick="fecharModal()">&times;</span>
+        </div>
+    </div>
+
+</body>
+
+</html>

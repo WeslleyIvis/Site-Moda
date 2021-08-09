@@ -12,7 +12,10 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+
+    <script src="javascript/javascript.js"></script>
 
     <title>Moda</title>
 
@@ -30,15 +33,14 @@
                     <div class="img-logo"></div>
                 </div>
                 <div>
-                  
+
                 </div>
                 <div class="ico">
                     <img class="icon" src="imagens/icones/icon-i.png" alt="">
-            
+
                     <img class="icon" src="imagens/icones/icon-bolsa.png" alt="">
                 </div>
             </div>
-
 
             <div class="nav-items">
                 <ul>
@@ -128,15 +130,30 @@
 
 
                     <div class="flex-categoria">
-                        <div class="categoria-1 categoria">
-                            <div class="img-categoria-1 categoria"></div>
+
+                        <div class="img categoria-1 categoria img_modal" onclick="abrirModal()"></div>
+
+                        <div class="fundo_modal" id="modal">
+                            <div class="modal">
+                                <div class="imagem-0"></div>
+                                <span class="fechar" onclick="fecharModal()">&times;</span>
+                            </div>
                         </div>
-                        <div class="categoria-2 categoria">
-                            <div></div>
+
+
+                        <div class="categoria-2 categoria img_modal" onclick="abrirModal1()"> </div>
+
+                        <div class="fundo_modal" id="modal">
+                            <div class="modal">
+                                <div class="imagem-1"></div>
+                                <span class="fechar" onclick="fecharModal1()">&times;</span>
+                            </div>
                         </div>
+
                         <div class="categoria-3 categoria">
                             <div></div>
                         </div>
+
                         <div class="categoria-4 categoria">
                             <div></div>
                         </div>
@@ -159,19 +176,19 @@
             </div>
 
             <footer>
-                
-                    <section class="newsletter">
-                        <div class="newsletter-info">
-                            <h3>Newsletter</h3>
-                            <p>Receba os melhores descontos <br>
-                                direto em seu e-mail</p>
-                        </div>
-                        <form class="newsletter-form">
-                            <input type="text" placeholder="Seu e-mail">
-                            <button> ENVIAR</button>
-                        </form>
-                    </section>
-               
+
+                <section class="newsletter">
+                    <div class="newsletter-info">
+                        <h3>Newsletter</h3>
+                        <p>Receba os melhores descontos <br>
+                            direto em seu e-mail</p>
+                    </div>
+                    <form class="newsletter-form">
+                        <input type="text" placeholder="Seu e-mail">
+                        <button> ENVIAR</button>
+                    </form>
+                </section>
+
 
                 <div class="footer-info">
                     <div>
@@ -190,7 +207,7 @@
                 </div>
             </footer>
 
-
+          
 
     </main>
 

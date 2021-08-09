@@ -5216,7 +5216,7 @@ textarea.form-control-lg {
   word-wrap: break-word;
 }
 
-.modal {
+/*.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -5227,7 +5227,7 @@ textarea.form-control-lg {
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
-}
+}*/
 
 .modal-dialog {
   position: relative;
