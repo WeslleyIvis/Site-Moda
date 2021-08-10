@@ -1,13 +1,13 @@
 
 
-function abrirModal(modal) {
-    document.getElementById('modal', 'modal-1').style.top="0";
-    document.getElementById('modal', 'modal-1').style.display="block";
+function abrirModal(id) {
+    document.getElementById(id).style.top="0";
+    document.getElementById(id).style.display="block";
 }
 
-function fecharModal() {
-    document.getElementById('modal', 'modal-1').style.top="-100%";
-    document.getElementById('modal', 'modal-1').style.display="none";
+function fecharModal(id) {
+    document.getElementById(id).style.top="-100%";
+    document.getElementById(id).style.display="none";
     
 }
 
