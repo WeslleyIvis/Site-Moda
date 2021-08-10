@@ -147,6 +147,7 @@ h4 {
     max-width: 1280px;
     margin: 0 auto;
     background-color: #F8A922;
+    
 }
 
 .categorias h2 {
@@ -159,6 +160,7 @@ h4 {
     width: 48px;  
     margin-left: 10px;
     max-width: 1260px;     
+    
 }
 
 .flex-categoria {
@@ -166,12 +168,7 @@ h4 {
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 10px;
-}
-
-.categoria { 
-    max-width: 960px;
-    margin: 0 auto;
-   
+    
 }
 
 .categoria-1 {
@@ -183,6 +180,7 @@ h4 {
     -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
 box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
     transition: width 1s, height 2s, transform 5s;
+    margin: 0 auto;
 }
 
 .categoria-2 {
@@ -195,7 +193,9 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
 box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     transition: width 1s, height 2s, transform 5s;
+    margin: 0 auto;
 }
+
 
 .categoria-3 {
     width: 290px;
@@ -206,6 +206,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
 box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     transition: width 1s, height 2s, transform 5s;
+    margin: 0 auto;
 }
 
 .categoria-4 {
@@ -217,7 +218,9 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
 box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     transition: width 1s, height 2s, transform 5s;
+    margin: 0 auto;
 }
+
 
 @media (min-width: 1650px) {
     .categorias {
@@ -262,6 +265,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     background-image: url('../imagens/Sobre-icone.png');
     background-repeat: no-repeat;
     background-position-y: 40px;
+    
 }
 
 .sobre-info {
@@ -278,6 +282,61 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 .sobre-info p {
     font-size: 1.2em;
     color: white;
+}
+
+
+
+/* RADIOS - MODEL */
+
+.radius-model {
+    background-color: #f1f0f0;
+    max-width: 100%;
+    margin: 0px auto;
+    padding: 20px;
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.radius-form-modelos {
+    background-size: cover;
+    background-position: center -3vh;
+    border: 1px solid #F8A922;
+    border-radius: 50%;
+    width: 224px;
+    height: 200px;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
+box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
+}
+
+.radius-modal-tamanho {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: bottom ;
+    background-repeat: no-repeat;
+}
+
+.radius-modelo-0 {
+    background-image: url('../imagens/radius-modelo-0.jpeg'); 
+}
+
+.radius-modelo-1 {
+    background-image: url('../imagens/radius-modelo-1.jpeg');
+}
+
+.radius-modelo-2 {
+    background-image: url('../imagens/radius-modelo-2.jpeg');   
+}
+
+.radius-modelo-3 {
+    background-image: url('../imagens/radius-modelo-3.jpeg') 
+}
+
+.radius-modelo-4 {
+    background-image: url('../imagens/radius-modelo-4.jpeg');    
 }
 
 
