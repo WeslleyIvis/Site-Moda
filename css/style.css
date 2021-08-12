@@ -17,6 +17,7 @@ h1, h3, h4, p {
 ul, li, a {
     text-decoration: none;
     list-style: none;   
+    
 }
 
 h2 {
@@ -56,6 +57,8 @@ h4 {
    margin: 0 auto;  
    padding: 15px 0;   
 }
+
+
 
 .logo {
     background-image: url('../imagens/img-logo.png');
@@ -100,20 +103,28 @@ h4 {
     margin-top: 1rem;
 }
 
-.nav-items li {
+.nav-items ul li {
     max-height: 90px;
+    
 }
 
 .nav-items a {
     font-size: 1.25em;
     display: block;
-    margin: 0 47px;    
+    margin: 0 47px;   
+    color: #707070; 
+}
+
+/* Carrousel */
+
+.carrosel-largura {
+    max-height: 500px;
 }
 
 /* beneficios */
 
 .beneficios {  
-    padding: 24px;
+    padding-top: 1rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -127,13 +138,8 @@ h4 {
 
 .icon-bene {
     align-self: center;
-    margin-right: 10px;   
+    margin-right: 20px;   
 }
-
-.text-bene {
-    align-self: flex-end;
-}
-
 
 
 /* CATEGORIAS */
@@ -159,7 +165,6 @@ h4 {
     background-color: #0C37E3;
     width: 48px;  
     margin-left: 10px;
-    max-width: 1260px;     
     
 }
 
@@ -171,10 +176,9 @@ h4 {
     
 }
 
-.categoria-1 {
+.categoria-form {
     width: 290px;
-    height: 430px;
-    background-image: url('../imagens/Modelo-0.jpeg');
+    height: 500px;
     background-size: cover;
     background-position: center;  
     -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
@@ -183,46 +187,25 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     margin: 0 auto;
 }
 
-.categoria-2 {
-    width: 290px;
-    height: 430px;
-    background-image: url('../imagens/Modelo-1.jpeg');
-    background-size: cover;
-    background-position: center; /* -5vh;
-    background-repeat: no-repeat; */ 
-    -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
-    transition: width 1s, height 2s, transform 5s;
-    margin: 0 auto;
+.categoria-1 {
+  
+    background-image: url('../imagens/Modelo-0.jpeg'); 
 }
 
+.categoria-2 {
+    background-image: url('../imagens/Modelo-1.jpeg'); 
+}
 
 .categoria-3 {
-    width: 290px;
-    height: 430px;
     background-image: url('../imagens/Modelo-2.jpeg');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
-    transition: width 1s, height 2s, transform 5s;
-    margin: 0 auto;
 }
 
 .categoria-4 {
-    width: 290px;
-    height: 430px;
-    background-image: url('../imagens/Modelo-3.jpeg');
-    background-size: cover;
-    background-position: center;
-    -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
-    transition: width 1s, height 2s, transform 5s;
-    margin: 0 auto;
+    background-image: url('../imagens/Modelo-3.jpeg');   
 }
 
 
-@media (min-width: 1650px) {
+/*@media (min-width: 1650px) {
     .categorias {
         padding: 5px;
         max-width: 1680px;
@@ -236,7 +219,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 
     .categoria-1, .categoria-2, .categoria-3, .categoria-4 {
         width: 400px;
-        height: 800px;
+        height: 550px;
         transition: width 1s, height 2s, transform 5s;
     }
 
@@ -244,12 +227,12 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
         max-width: 1500;
         
     }
-}
+}*/
 
 /* CATEGORIA - SOBRE */
 
 .sobre {
-    max-width: 980px;
+    max-width: 1280px;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -265,7 +248,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     background-image: url('../imagens/Sobre-icone.png');
     background-repeat: no-repeat;
     background-position-y: 40px;
-    
+    margin: 0 auto;
 }
 
 .sobre-info {
@@ -293,7 +276,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     max-width: 100%;
     margin: 0px auto;
     padding: 20px;
-    gap: 20px;
+    gap: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -302,13 +285,13 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 .radius-form-modelos {
     background-size: cover;
     background-position: center -3vh;
-    border: 1px solid #F8A922;
+    
+    border: 5px solid #ffffff;
     border-radius: 50%;
-    width: 224px;
-    height: 200px;
+    width: 120px;
+    height: 120px;
     cursor: pointer;
-    -webkit-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42); 
-box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
+    
 }
 
 .radius-modal-tamanho {
@@ -320,7 +303,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 }
 
 .radius-modelo-0 {
-    background-image: url('../imagens/radius-modelo-0.jpeg'); 
+    background-image: url('../imagens/radius-modelo-0.jpeg');   
 }
 
 .radius-modelo-1 {
