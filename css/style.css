@@ -284,12 +284,11 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 
 .radius-form-modelos {
     background-size: cover;
-    background-position: center -3vh;
-    
+    background-position: center -3vh;   
     border: 5px solid #ffffff;
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 160px;
+    height: 160px;
     cursor: pointer;
     
 }
@@ -384,3 +383,6 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     justify-content: space-around;
     flex-wrap: wrap;
 }
+
+
+/* transition: all .2s cubic-bezier(0.04, 0.99, 0.76, -0.36); */
