@@ -29,7 +29,9 @@ h2 {
 }
 
 h4 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
 .icon {
@@ -118,17 +120,23 @@ h4 {
 /* Carrousel */
 
 .carrosel-largura {
-    max-height: 500px;
+    max-height: 400px;
 }
 
 /* beneficios */
 
 .beneficios {  
-    padding-top: 1rem;
+    padding-top: 0.5rem;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    max-width: 1280px;
+    margin: 0 auto;
     
+}
+
+.text-bene p {
+    font-size: 0.8em;
 }
 
 .beneficios-item {
@@ -236,7 +244,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
     margin: 40px auto 10px;
     flex-wrap: wrap;
     max-width: 1280px;
-    height: 300px;
+    height: 250px;
 }
 
 /*                                      ROUPAS */
@@ -349,7 +357,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 }
 
 .imp-img-0 {
-    background-image: url('../imagens/imperdivel/imperdeivel-0.jpeg');
+    background-image: url('../imagens/imperdivel/imperdeivel-new.jpeg');
 }
 
 .imp-img-1 {
@@ -363,7 +371,7 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 /* RADIOS - MODEL */
 
 .radius-model {
-    background-color: #9e9c9c;
+    background-color: #ffffff;
     max-width: 1280px;
     margin: 0px auto;
     padding: 20px;
@@ -376,7 +384,6 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 .radius-form-modelos {
     background-size: cover;
     background-position: center -3vh;   
-    border: 5px solid #ffffff;
     border-radius: 50%;
     width: 100px;
     height: 100px;
@@ -385,7 +392,8 @@ box-shadow: 5px 5px 13px 2px rgba(0,0,0,0.42);
 }
 
 .radius-modal-tamanho {
-
+    width: 100%;
+    height: 100%;
     background-size: cover;
     background-position: bottom ;
     background-repeat: no-repeat;
