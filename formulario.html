@@ -4,100 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
 
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-        }
+    <title></title>
 
-        body {
-            background-color: rgb(219, 215, 215);
-        }
-
-        legend {
-            color: rgb(255, 255, 255);
-            font-size: 2em;
-            text-align: center;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-        .block-cadastro {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 50px;
-            background-color: rgb(190, 178, 243);
-            margin-top: 150px;
-            border-radius: 10px;
-        }
-
-        .input-group {
-            padding: 10px 0 10px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .input-group>label {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            font-size: 1.1em;
-            color: rgb(89, 31, 136);
-            padding: 0 0 5px;
-        }
-
-        .input-group>input {
-            outline: none;
-            width: 100%;
-            height: 35px;
-            padding: 10px;
-            border-radius: 10px;
-            border: none;
-            box-shadow: 1px 1px 1px 1px rgba(41, 41, 41, 0.089);
-        }
-
-        .input-group>select {
-            border: none;
-            border-radius: 10px;
-            outline: none;
-            margin-left: 10px
-        }
-
-        .newsletter {
-            font-size: 1.1em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(85, 85, 85);
-            padding-left: 100px;
-            
-        }
-
-        button {
-            font-size: 1.1em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(85, 85, 85);
-            padding: 10px;
-            border: none;
-            border-radius: 10px;
-            width: 100%;
-            margin-top: 30px;
-            cursor: pointer;
-            color: rgb(80, 80, 80);
-        }
-
-        .newsletter span {
-            font-size: 0.8em;
-        }
-    </style>
 </head>
 
 
 <body>
 
+    <nav class="menu-bg">
+        <div class="menu">
+            <div class="nav-1">
+                <div class="logo">
+                    <div class="img-logo"></div>
+                </div>
+                <div>
+
+                </div>
+                <div class="ico">
+                    <a href="formulario.html"> <img class="icon" src="imagens/icones/icon-i.png" alt=""></a>
+
+                    <a href=""><img class="icon" src="imagens/icones/icon-bolsa.png" alt=""></a>
+                </div>
+            </div>
+
+            <div class="nav-items">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Feminino</a></li>
+                    <li><a href="">Plus-size</a></li>
+                    <li><a href="">Masculino</a></li>
+                    <li><a href="">Infantil</a></li>
+                    <li><a href="">Lingerie</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <section class="block-cadastro">
 
         <legend>Cadastro</legend>
 
-        <div class="input-group id="nome-erro"">
+        <div class="input-group id=" nome-erro"">
             <label for="name">Name:</label>
             <input type="text" name="name" id="nome" placeholder="Informe o seu nome">
         </div>
@@ -127,11 +78,10 @@
         <div class="input-group">
             <label for="sexo">Sexo</label>
             <select id="sexo">
-                <option value="1"></option>
                 <option value="2">Masculino</option>
                 <option value="3">Feminino</option>
             </select>
-            <div class="newsletter">
+            <div class="newsletterForm">
                 <label for="newsletter">newsletter</label>
                 <input type="checkbox" id="newsletter">
                 <span> - Receba em seu email </span>
@@ -142,102 +92,23 @@
 
     </section>
 
-    <script>
+    <footer>
+        <div class="footer-info">
+            <div>
+                <h4>Redes socias:</h4>
+                <div class="icon-social"></div>
+            </div>
 
-        document.title = "Cadastro"
+            <div>
+                <h4>Formas de pagamento:</h4>
+                <div class="icon-cartoes"></div>
+            </div>
 
-        function validar() {
-
-            var nome = document.getElementById('nome')
-            var sobrenome = document.getElementById('sobrenome')
-            var email = document.getElementById('email')
-            var senha = document.getElementById('senha')
-            var telefone = document.getElementById('telefone')
-            var sexo = document.getElementById('sexo')
-            var newsletter = document.getElementById('newsletter').checked;
-
-
-            // verificar se o nome está vazio
-            if (nome.value == "") {
-                let newInfo = document.createElement('p')
-                let info = document.createTextNode('Campo obrigatorio!')
-                newInfo.appendChild(info);
-
-                var campo = document.getElementById('nome-erro')
-                campo.appendChild(newInfo)
-
-                //Deixa o input com o focus
-                nome.focus()
-
-                //Retorna a função e não olha as outras linhas
-                return;
-            }
-
-            if (sobrenome.value == "") {
-                let newInfo = document.createElement('p')
-                let info = document.createTextNode('Campo obrigatorio!')
-                newInfo.appendChild(info);
-
-                var campo = document.getElementById('sobrenome-erro')
-                campo.appendChild(newInfo)
-                sobrenome.focus()
-                return
-            }
-
-            if (email.value == "") {
-                let newInfo = document.createElement('p')
-                let info = document.createTextNode('Campo obrigatorio!')
-                newInfo.appendChild(info);
-
-                var campo = document.getElementById('email-erro')
-                campo.appendChild(newInfo)
-
-                email.focus()
-                return
-            }
-
-            if (senha.value == "") {
-                let newInfo = document.createElement('p')
-                let info = document.createTextNode('Campo obrigatorio!')
-                newInfo.appendChild(info);
-
-                var campo = document.getElementById('senha-erro')
-                campo.appendChild(newInfo)
-
-                senha.focus()
-                return
-            }
-
-            if (telefone.value == "") {
-                let newInfo = document.createElement('p')
-                let info = document.createTextNode('Campo obrigatorio!')
-                newInfo.appendChild(info);
-
-                var campo = document.getElementById('telefone-erro')
-                campo.appendChild(newInfo)
-
-                telefone.focus()
-                return
-            }
-
-            if (sexo.value == "") {
-                alert("Campo Obrigatório")
-                sexo.focus()
-                return
-            }
-
-            alert('Informações enviadas')
-
-            document.write(
-                `<div> Nome: ${nome.value} <br>
-                Sobrenome: ${sobrenome.value} <br>
-                E-mail: ${email.value} <br>
-                Senha: ${senha.value} <br>
-                Telefone: ${telefone.value} <br>
-                Sexo: ${sexo.value} </div>`)
-                
-        }
-    </script>
+            <div>
+                <h4>Meios de envio:</h4>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
