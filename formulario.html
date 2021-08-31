@@ -97,27 +97,27 @@
 
         <legend>Cadastro</legend>
 
-        <div class="input-group">
+        <div class="input-group id="nome-erro"">
             <label for="name">Name:</label>
             <input type="text" name="name" id="nome" placeholder="Informe o seu nome">
         </div>
 
-        <div class="input-group">
+        <div class="input-group" id="sobrenome-erro">
             <label for="sobrenome">Sobrenome:</label>
             <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe o seu sobronome">
         </div>
 
-        <div class="input-group">
+        <div class="input-group" id="email-erro">
             <label for="email">E-mail</label>
             <input type="text" id="email" placeholder="Insira a senha">
         </div>
 
-        <div class="input-group">
+        <div class="input-group" id="senha-erro">
             <label for="senha">Senha</label>
             <input type="password" id="senha" placeholder="Insira a senha">
         </div>
 
-        <div class="colunas">
+        <div class="colunas" id="telefone-erro">
             <div class="input-group">
                 <label for="telefone">Telefone</label>
                 <input type="text" id="telefone" placeholder="Telefone">
@@ -159,7 +159,12 @@
 
             // verificar se o nome está vazio
             if (nome.value == "") {
-                alert("Campo Obrigatório!")
+                let newInfo = document.createElement('p')
+                let info = document.createTextNode('Campo obrigatorio!')
+                newInfo.appendChild(info);
+
+                var campo = document.getElementById('nome-erro')
+                campo.appendChild(newInfo)
 
                 //Deixa o input com o focus
                 nome.focus()
@@ -169,25 +174,48 @@
             }
 
             if (sobrenome.value == "") {
-                alert("Campo Obrigatório!")
+                let newInfo = document.createElement('p')
+                let info = document.createTextNode('Campo obrigatorio!')
+                newInfo.appendChild(info);
+
+                var campo = document.getElementById('sobrenome-erro')
+                campo.appendChild(newInfo)
                 sobrenome.focus()
                 return
             }
 
             if (email.value == "") {
-                alert("Campo Obrigatório!")
+                let newInfo = document.createElement('p')
+                let info = document.createTextNode('Campo obrigatorio!')
+                newInfo.appendChild(info);
+
+                var campo = document.getElementById('email-erro')
+                campo.appendChild(newInfo)
+
                 email.focus()
                 return
             }
 
             if (senha.value == "") {
-                alert("Campo Obrigatório!")
+                let newInfo = document.createElement('p')
+                let info = document.createTextNode('Campo obrigatorio!')
+                newInfo.appendChild(info);
+
+                var campo = document.getElementById('senha-erro')
+                campo.appendChild(newInfo)
+
                 senha.focus()
                 return
             }
 
             if (telefone.value == "") {
-                alert("Campo Obrigatório")
+                let newInfo = document.createElement('p')
+                let info = document.createTextNode('Campo obrigatorio!')
+                newInfo.appendChild(info);
+
+                var campo = document.getElementById('telefone-erro')
+                campo.appendChild(newInfo)
+
                 telefone.focus()
                 return
             }
