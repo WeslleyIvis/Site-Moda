@@ -44,60 +44,83 @@
         </div>
     </nav>
 
-    <section class="block-cadastro" id="block-form">
+    <section class="content" id="block-form">
+        <div action="" class="formBlock">
+            <legend>CADASTRO</legend>
 
-        <legend>Cadastro</legend>
+            <div class="input-group" id="nome-erro">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="nome" autocomplete="off" placeholder="Informe o seu nome">
+                <div id="nameErro"></div>
+            </div>
 
-        <div class="input-group" id="nome-erro">
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="nome" autocomplete="off" placeholder="Informe o seu nome" >
-            <div id="nameErro"></div>
-        </div>
+            <div class="input-group" id="sobrenome-erro">
+                <label for="sobrenome">Sobrenome:</label>
+                <input type="text" name="sobrenome" id="sobrenome" autocomplete="off"
+                    placeholder="Informe o seu sobronome">
+                <div id="sobrenomeErro"></div>
+            </div>
 
-        <div class="input-group" id="sobrenome-erro">
-            <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome" autocomplete="off" placeholder="Informe o seu sobronome">
-            <div id="sobrenomeErro"></div>
-        </div>
+            <div class="input-group" id="email-erro">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" placeholder="E-mail " autocomplete="off">
+                <div id="emailErro"></div>
+            </div>
 
-        <div class="input-group" id="email-erro">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" placeholder="E-mail " autocomplete="off">
-            <div id="emailErro"></div>
-        </div>
-
-        <div class="input-group" id="senha-erro">
-            <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Senha">
-        </div>
-
-        <div class="input-group" id="confirmSenha-erro">
-            <label for="senha">Confirme a senha</label>
-            <input type="password" id="confirmSenha" placeholder="Confirme a senha">
-        </div>
-
-        <div class="colunas" id="telefone-erro">
             <div class="input-group">
-                <label for="telefone">Telefone</label>
-                <input type="tel" id="telefone" placeholder="Telefone" autocomplete="off">
+                <label for="cpf">CPF</label>
+                <input id="cpf" placeholder="Número do CPF " autocomplete="off">
+                <div id="emailErro"></div>
+            </div>
+
+            <div class="input-group" id="senha-erro">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" placeholder="Senha">
+                <div id="senhaErro"></div>
+            </div>
+
+            <div class="input-group" id="confirmSenha-erro">
+                <label for="senha">Confirme a senha</label>
+                <input type="password" id="confirmSenha" placeholder="Confirme a senha">
+                <div id="confirmSenhaErro"></div>
+            </div>
+
+
+            <div class="input-group">
+                <label for="nascimento">Nascimento</label>
+                <input type="date" id="nascimento" placeholder="">
+                <div id="senhaErro"></div>
+            </div>
+
+            <div class="colunas" id="telefone-erro">
+                <div class="input-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" placeholder="Telefone" autocomplete="off">
+                    <div id="telefoneErro"></div>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="sexo">Sexo</label>
+                <select id="sexo">
+                    <option value="2">Masculino</option>
+                    <option value="3">Feminino</option>
+                </select>
+                <div class="newsletterForm">
+                    <label for="newsletter">newsletter</label>
+                    <input type="checkbox" id="newsletter">
+                    <span> - Receba em seu email </span>
+                </div>
+            </div>
+
+            <div class="buttonAlign">
+                <button onclick="validar()">Enviar</button>
             </div>
         </div>
 
-        <div class="input-group">
-            <label for="sexo">Sexo</label>
-            <select id="sexo">
-                <option value="2">Masculino</option>
-                <option value="3">Feminino</option>
-            </select>
-            <div class="newsletterForm">
-                <label for="newsletter">newsletter</label>
-                <input type="checkbox" id="newsletter">
-                <span> - Receba em seu email </span>
-            </div>
-        </div>
-
-        <button onclick="validar()">Enviar</button>
-
+        <section class="illustration">
+            <div class="imgIllustration"></div>
+        </section>
     </section>
 
     <footer>

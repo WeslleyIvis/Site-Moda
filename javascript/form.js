@@ -16,7 +16,7 @@ function validar() {
     // verificar se o nome está vazio
 
     if (nome.value == "") {
-        nameErro.innerHTML = '<p> Campo obrigatorio!</p>'
+        nameErro.innerHTML = '<p> Campo obrigatorio! &times; </p>'
 
         //Deixa o input com o focus
         nome.focus()
@@ -27,104 +27,33 @@ function validar() {
 
     
     if (sobrenome.value == "") {
-
-        sobrenomeErro.innerHTML = '<p> Campo obrigatorio!</p>'
-
+        document.getElementsByName('sobrenome')[0].placeholder = 'Este campo é obrigatorio '
         sobrenome.focus()
-
         return
     }
 
-
-
-    if (email.value == "") {
-        let newInfo = document.createElement('p')
-        let info = document.createTextNode('Campo obrigatorio!')
-        newInfo.appendChild(info);
-
-        var campo = document.getElementById('email-erro')
-        campo.appendChild(newInfo)
-
+    if (email.value == "") {    
+        emailErro.innerHTML = '<p> Estre campo precisar ser preenchido. &times;</p>'
         email.focus()
         return
     }
 
-    /*
-     _____            _           
-    /  ___|          | |          
-    \ `--.  ___ _ __ | |__   __ _ 
-     `--. \/ _ \ '_ \| '_ \ / _` |
-    /\__/ /  __/ | | | | | | (_| |
-    \____/ \___|_| |_|_| |_|\__,_|
-                                  
-    */
-
     if (senha.value == "") {
-        let newInfo = document.createElement('p')
-        let info = document.createTextNode('Campo obrigatorio!')
-        newInfo.appendChild(info);
-
-        var campo = document.getElementById('senha-erro')
-        campo.appendChild(newInfo)
-
+        senhaErro.innerHTML = '<p> Campo obrigatório &times; </p>'
         senha.focus()
         return
     }
 
-    /*
- _____              __ _                _____            _           
-/  __ \            / _(_)              /  ___|          | |          
-| /  \/ ___  _ __ | |_ _ _ __ _ __ ___ \ `--.  ___ _ __ | |__   __ _ 
-| |    / _ \| '_ \|  _| | '__| '_ ` _ \ `--. \/ _ \ '_ \| '_ \ / _` |
-| \__/\ (_) | | | | | | | |  | | | | | /\__/ /  __/ | | | | | | (_| |
- \____/\___/|_| |_|_| |_|_|  |_| |_| |_\____/ \___|_| |_|_| |_|\__,_|
-    */
-
 
     if (confirmSenha.value == "") {
-        let newInfo = document.createElement('p')
-        let info = document.createTextNode('A senha deve ser a mesma')
-        newInfo.appendChild(info);
-
-        var campo = document.getElementById('confirmSenha-erro');
-        campo.appendChild(newInfo);
-
+        confirmSenhaErro.innerHTML = '<p> A senha precisar ser confirmado &times;</p>'
         confirmSenha.focus();
         return
 
-    } else if (confirmSenha.value != senha) {
-
-        let newInfo = document.createElement('p')
-        let info = document.createTextNode('A senha deve ser a mesma')
-        newInfo.appendChild(info);
-
-        var campo = document.getElementById('confirmSenha-erro');
-        campo.appendChild(newInfo);
-
-        confirmSenha.focus();
-        return
     }
 
-    /*
- _____    _       __                 
-|_   _|  | |     / _|                
-  | | ___| | ___| |_ ___  _ __   ___ 
-  | |/ _ \ |/ _ \  _/ _ \| '_ \ / _ \
-  | |  __/ |  __/ || (_) | | | |  __/
-  \_/\___|_|\___|_| \___/|_| |_|\___|
-                                     
-    */
-
-
-
     if (telefone.value == "") {
-        let newInfo = document.createElement('p')
-        let info = document.createTextNode('Campo obrigatorio!')
-        newInfo.appendChild(info);
-
-        var campo = document.getElementById('telefone-erro')
-        campo.appendChild(newInfo)
-
+        telefoneErro.innerHTML = '<p> Este campo é obrigatiro </p>'
         telefone.focus()
         return
     }
