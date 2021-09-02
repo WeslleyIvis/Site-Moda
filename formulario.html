@@ -44,34 +44,42 @@
         </div>
     </nav>
 
-    <section class="block-cadastro">
+    <section class="block-cadastro" id="block-form">
 
         <legend>Cadastro</legend>
 
-        <div class="input-group id=" nome-erro"">
+        <div class="input-group" id="nome-erro">
             <label for="name">Name:</label>
-            <input type="text" name="name" id="nome" placeholder="Informe o seu nome">
+            <input type="text" name="name" id="nome" autocomplete="off" placeholder="Informe o seu nome" >
+            <div id="nameErro"></div>
         </div>
 
         <div class="input-group" id="sobrenome-erro">
             <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome" placeholder="Informe o seu sobronome">
+            <input type="text" name="sobrenome" id="sobrenome" autocomplete="off" placeholder="Informe o seu sobronome">
+            <div id="sobrenomeErro"></div>
         </div>
 
         <div class="input-group" id="email-erro">
             <label for="email">E-mail</label>
-            <input type="text" id="email" placeholder="Insira a senha">
+            <input type="email" id="email" placeholder="E-mail " autocomplete="off">
+            <div id="emailErro"></div>
         </div>
 
         <div class="input-group" id="senha-erro">
             <label for="senha">Senha</label>
-            <input type="password" id="senha" placeholder="Insira a senha">
+            <input type="password" id="senha" placeholder="Senha">
+        </div>
+
+        <div class="input-group" id="confirmSenha-erro">
+            <label for="senha">Confirme a senha</label>
+            <input type="password" id="confirmSenha" placeholder="Confirme a senha">
         </div>
 
         <div class="colunas" id="telefone-erro">
             <div class="input-group">
                 <label for="telefone">Telefone</label>
-                <input type="text" id="telefone" placeholder="Telefone">
+                <input type="tel" id="telefone" placeholder="Telefone" autocomplete="off">
             </div>
         </div>
 
@@ -110,6 +118,8 @@
         </div>
     </footer>
 
+
+    <script src="javascript/form.js"></script>
 </body>
 
 </html>

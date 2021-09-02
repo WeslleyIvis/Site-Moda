@@ -83,3 +83,10 @@ button {
 .newsletterForm span {
     font-size: 0.8em;
 }
+
+footer {
+    width: 100%;
+
+    top: -100px;
+    bottom: 0;
+}
