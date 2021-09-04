@@ -8,95 +8,97 @@
     <link rel="stylesheet" href="css/form.css">
     <link rel="stylesheet" href="css/style.css">
 
-    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
+    
+
+    <script src="javascript/form.js"></script>
 
 </head>
 
 
 <body>
 
-    <nav class="menu-bg">
-        <div class="menu">
-            <div class="nav-1">
-                <div class="logo">
-                    <div class="img-logo"></div>
-                </div>
-                <div>
+    <div class="msg-anuncio"></div>
 
-                </div>
-                <div class="ico">
-                    <a href="formulario.html"> <img class="icon" src="imagens/icones/icon-i.png" alt=""></a>
-
-                    <a href=""><img class="icon" src="imagens/icones/icon-bolsa.png" alt=""></a>
-                </div>
-            </div>
-
-            <div class="nav-items">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="">Feminino</a></li>
-                    <li><a href="">Plus-size</a></li>
-                    <li><a href="">Masculino</a></li>
-                    <li><a href="">Infantil</a></li>
-                    <li><a href="">Lingerie</a></li>
-                </ul>
-            </div>
+    <header class="nav-1">
+        <div class="logo">
+            <div class="img-logo"></div>
         </div>
+        <div class="ico">
+            <a href="formulario.html"> <img class="icon" src="imagens/icones/icon-i.png" alt=""></a>
+
+            <a href=""><img class="icon" src="imagens/icones/icon-bolsa.png" alt=""></a>
+        </div>
+    </header>
+
+    <nav>
+
+            <ul>
+                <li><a href="index.html" class=" ativo">Home</a></li>
+                <li><a href="">Feminino</a></li>
+                <li><a href="">Plus-size</a></li>
+                <li><a href="">Masculino</a></li>
+                <li><a href="">Infantil</a></li>
+                <li><a href="">Lingerie</a></li>
+            </ul>
+
     </nav>
+
 
     <section class="content" id="block-form">
         <div action="" class="formBlock">
             <legend>CADASTRO</legend>
 
-            <div class="input-group" id="nome-erro">
+            <div class="input-group" onmouseleave='validar_nome()'>
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="nome" autocomplete="off" placeholder="Informe o seu nome">
-                <div id="nameErro"></div>
+                <span id="nameErro"></span>
             </div>
 
-            <div class="input-group" id="sobrenome-erro">
+            <div class="input-group">
                 <label for="sobrenome">Sobrenome:</label>
                 <input type="text" name="sobrenome" id="sobrenome" autocomplete="off"
                     placeholder="Informe o seu sobronome">
-                <div id="sobrenomeErro"></div>
+                <span id="sobrenomeErro"></span>
             </div>
 
-            <div class="input-group" id="email-erro">
+            <div class="input-group">
                 <label for="email">E-mail</label>
-                <input type="text" id="email" placeholder="E-mail " autocomplete="off">
-                <div id="emailErro"></div>
+                <input type="text" id="email" placeholder="E-mail" autocomplete="off">
+                <span id="emailErro"></span>
             </div>
 
             <div class="input-group">
                 <label for="cpf">CPF</label>
-                <input id="cpf" placeholder="Número do CPF " autocomplete="off">
-                <div id="emailErro"></div>
+                <input id="cpf" placeholder="Número do CPF" autocomplete="off" class="mask-cpf">
+                <span id="cpfErro"></span>
             </div>
 
             <div class="input-group" id="senha-erro">
                 <label for="senha">Senha</label>
-                <input type="password" id="senha" placeholder="Senha">
-                <div id="senhaErro"></div>
+                <input type="password" id="senha" placeholder="Senha" maxlength="20" minlength="6">
+                <span id="senhaErro"></span>
             </div>
 
             <div class="input-group" id="confirmSenha-erro">
                 <label for="senha">Confirme a senha</label>
                 <input type="password" id="confirmSenha" placeholder="Confirme a senha">
-                <div id="confirmSenhaErro"></div>
+                <span id="confirmSenhaErro"></span>
             </div>
 
 
             <div class="input-group">
                 <label for="nascimento">Nascimento</label>
-                <input type="date" id="nascimento" placeholder="">
-                <div id="senhaErro"></div>
+                <input id="nascimento" placeholder="Data de nascimento" class="date">
+                <span id="nascimentoErro"></span>
             </div>
 
             <div class="colunas" id="telefone-erro">
                 <div class="input-group">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="Telefone" autocomplete="off">
-                    <div id="telefoneErro"></div>
+                    <input  id="telefone" placeholder="Telefone" autocomplete="off" class="phone_with_ddd">
+                    <span id="telefoneErro"></span>
                 </div>
             </div>
 
@@ -114,7 +116,7 @@
             </div>
 
             <div class="buttonAlign">
-                <button onclick="validar()">Enviar</button>
+                <button onclick="validarTudo()">Enviar</button>
             </div>
         </div>
 
@@ -142,7 +144,8 @@
     </footer>
 
 
-    <script src="javascript/form.js"></script>
+
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>

@@ -11,7 +11,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,37 +21,33 @@
 
 </head>
 
-<body>
+<body onload="navbar()">
 
-    <header class="msg-anuncio"></header>
+    <div class="msg-anuncio"></div>
 
-    <nav class="menu-bg">
-        <div class="menu">
-            <div class="nav-1">
-                <div class="logo">
-                    <div class="img-logo"></div>
-                </div>
-                <div>
-
-                </div>
-                <div class="ico">
-                 <a href="formulario.html">   <img class="icon" src="imagens/icones/icon-i.png" alt=""></a>
-
-                 <a href=""><img class="icon" src="imagens/icones/icon-bolsa.png" alt="" ></a>
-                </div>
-            </div>
-
-            <div class="nav-items">
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Feminino</a></li>
-                    <li><a href="">Plus-size</a></li>
-                    <li><a href="">Masculino</a></li>
-                    <li><a href="">Infantil</a></li>
-                    <li><a href="">Lingerie</a></li>
-                </ul>
-            </div>
+    <header class="nav-1">
+        <div class="logo">
+            <div class="img-logo"></div>
         </div>
+        <div class="ico">
+            <a href="formulario.html"> <img class="icon" src="imagens/icones/icon-i.png" alt=""></a>
+
+            <a href=""><img class="icon" src="imagens/icones/icon-bolsa.png" alt=""></a>
+        </div>
+    </header>
+
+    <nav >
+        <div class="nav-items">
+            <ul>
+                <li><a href="" class=" ativo">Home</a></li>
+                <li><a href="">Feminino</a></li>
+                <li><a href="">Plus-size</a></li>
+                <li><a href="">Masculino</a></li>
+                <li><a href="">Infantil</a></li>
+                <li><a href="">Lingerie</a></li>
+            </ul>
+        </div>
+
     </nav>
 
 
@@ -241,33 +236,33 @@
                         <span class="fechar" onclick="fecharModal('modal-4')">&times;</span>
                     </div>
                 </div>
-            </section,>
+                </section,>
 
-            <section class="block-imp-items">
-                <h2>IMPERDÍVEIS</h2>
-                <div class="block-categoria"></div>
+                <section class="block-imp-items">
+                    <h2>IMPERDÍVEIS</h2>
+                    <div class="block-categoria"></div>
 
-                <div class="imperdiveis">
-                    <div class="imp-img-0 imp-img-form"></div>
-                    <div class="imp-img-1 imp-img-form"></div>
-                    <div class="imp-img-2 imp-img-form"></div>
+                    <div class="imperdiveis">
+                        <div class="imp-img-0 imp-img-form"></div>
+                        <div class="imp-img-1 imp-img-form"></div>
+                        <div class="imp-img-2 imp-img-form"></div>
+                    </div>
+                </section>
+
+                <div class="sobre">
+                    <div class="sobre-info">
+                        <h3>Sobre</h3>
+                        <p>O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
+                            positivamente <br>
+                            acorreta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
+
+                        <p> O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
+                            positivamente <br>
+                            a correta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
+                    </div>
+
+                    <div class="sobre-img"></div>
                 </div>
-            </section>
-
-            <div class="sobre">
-                <div class="sobre-info">
-                    <h3>Sobre</h3>
-                    <p>O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
-                        positivamente <br>
-                        acorreta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
-
-                    <p> O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
-                        positivamente <br>
-                        a correta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
-                </div>
-
-                <div class="sobre-img"></div>
-            </div>
     </main>
 
     <footer>
@@ -302,13 +297,7 @@
         </div>
     </footer>
 
-  
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
-        integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
-        crossorigin="anonymous"></script>
-
-    <script src="javascript/javascript.js"></script>
-    <script src="javascript/modal.js"></script>
+    <script src="javascript/index.js"></script>
 </body>
 
 </html>
