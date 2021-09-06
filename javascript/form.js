@@ -13,29 +13,31 @@ $(function () {
     $('.date').mask('99 / 99 / 9999')
 });
 
-
-
-    // verificar se o nome está vazio
-    //Deixa o input com o focus
-    //Retorna a função e não olha as outras linha
-
+// verificar se o nome está vazio
+//Deixa o input com o focus
+//Retorna a função e não olha as outras linha
 
 function validar_nome() {
     let focar = document.getElementById('nome');
-    
+
     let nome = document.getElementById('nome').value;
     let re = /[^a-zà-ú]/gi
     let validaNome = nome.match(re)
 
-    
-    if (validaNome || !nome) {
+
+    if (nome = "") {
+        nameErro.innerHTML = '<p> Campo obrigatorio &times; </p>';
+
+        focar.focus()
+        return false
+    }
+    else if (validaNome || !nome) {
         nameErro.innerHTML = '<p> Apenas letras! &times; </p>';
-        
+
         focar.focus();
         return false;
     }
     nameErro.innerHTML = '<p></p>';
-    
     return true;
 }
 
@@ -97,8 +99,8 @@ function validar_cofirmSenha() {
     } else if (confirmSenha.value != senha.value) {
         confirmSenhaErro.innerHTML = '<p> A senha precisa ser igual </p>'
         confirmSenha.focus();
-       return false
-    } 
+        return false
+    }
     confirmSenhaErro.innerHTML = ''
     return true
 }
