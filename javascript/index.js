@@ -19,6 +19,19 @@ function fecharModal(id) {
             top: 0;*/
 
 
+/* */
+
+document.querySelector("#items").addEventListener("wheel", event => {
+    if(event.daltaY > 0) {
+        event.target.scrollBy(300, 0)
+    } else {
+        event.target.scrollBy(-300, 0)
+    }
+});
+
+
+/* */
+
 
 const nav = document.getElementsByTagName('nav')[0];
 const topNav = nav.offsetTop;

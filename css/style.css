@@ -76,14 +76,15 @@ h4 {
 }
 
 .menu-bg {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(255, 253, 253);
+
 }
 
 .logo {
     background-image: url('../imagens/icones/logo.png');
     background-size: cover;
-    height: 100px;
-    width: 120px;
+    height: 80px;
+    width: 100px;
     margin: 10px;
     flex: 0 0 auto;
     margin: 0 100px;
@@ -141,12 +142,13 @@ h4 {
 .contador {
     font-weight: bolder;
     position: absolute;
-    background: rgb(243, 225, 225);
+    background: rgb(21, 8, 138);
     border-radius: 50%;
     width: 30px;
     top: 33px;
     left: 25px;
     text-align: center;
+    color: white;
 }
 
  /* 
@@ -202,15 +204,43 @@ nav a.ativo {
 | /  \/ __ _ _ __ _ __ ___  _   _ ___  ___| |
 | |    / _` | '__| '__/ _ \| | | / __|/ _ \ |
 | \__/\ (_| | |  | | | (_) | |_| \__ \  __/ |
- \____/\__,_|_|  |_|  \___/ \__,_|___/\___|_|*/
+ \____/\__,_|_|  |_|  \___/ \__,_|___/\___|_|
+#carrousel-bg {
+    display: grid;
+    place-items: center; /*Centraliza os itens do container
+    
+}
 
-.carousel {
+#carousel {
     margin-top: 10px;
+    width: 100vw; /*Define o tamanho da viewport para ver os itens
 }
 
-.carrosel-largura {
-    max-height: 700px;
+#items {
+    display: flex;
+    overflow-y: auto; /*Cria um scroll com todos os itens flex, utilizando o tamanho maximo da viewport
+    
+    scroll-snap-type: x mandatory; /* eixo X = vertical - 
+    -webkit-overflow-scrolling: touch;
 }
+
+.item {
+   flex: none;
+
+    width: 100%;
+    height: 100%;
+
+    scroll-snap-align: start; /*Alinha a imagem que tiver mais px na tela
+    
+    pointer-events: none; /*Anula todos evetos que contem essa propriedade
+}
+
+#carousel img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+} */
 
 /* 
 ______                  __ _      _           
@@ -225,9 +255,10 @@ ______                  __ _      _
     padding-top: 0.5rem;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 1280px;
-    margin: 10px auto 10px;   
+    flex-wrap: wrap;  
+    margin: 10px auto 10px; 
+    padding: 10px;  
+    border-bottom: 1px solid #ccc ;
 }
 
 .text-bene p {
