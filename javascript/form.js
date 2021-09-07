@@ -24,30 +24,28 @@ function validar_nome() {
     let re = /[^a-zà-ú]/gi
     let validaNome = nome.match(re)
 
-
-    if (nome = "") {
-        nameErro.innerHTML = '<p> Campo obrigatorio &times; </p>';
-
-        focar.focus()
-        return false
-    }
-    else if (validaNome || !nome) {
+    if (validaNome || !nome) {
         nameErro.innerHTML = '<p> Apenas letras! &times; </p>';
 
         focar.focus();
         return false;
     }
-    nameErro.innerHTML = '<p></p>';
+    nameErro.innerHTML = '';
     return true;
 }
 
 function validar_sobrenome() {
-    let sobrenome = document.getElementById('sobrenome');
-    if (sobrenome.value == "") {
+    let focar = document.getElementById('sobrenome');
 
-        document.getElementsByName('sobrenome')[0].placeholder = 'Este campo é obrigatorio '
-        sobrenome.focus()
-        return false
+    let sobrenome = document.getElementById('sobrenome').value;
+    let re = /[^a-zà-ú]/gi
+    let validaSobrenome = sobrenome.match(re)
+
+    if (validaSobrenome || !sobrenome) {
+
+        sobrenomeErro.innerHTML = '<p> Este campo exige somente letras </p>'
+        focar.focus();
+        return false;
     }
 
     return true

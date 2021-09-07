@@ -40,7 +40,6 @@ ______
 
 
 .formBlock {
-    width: 600px;
     background-color: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 20px;
@@ -120,8 +119,8 @@ button {
  \___/|_|_|\__,_|___/\__|_|  \__,_|\__|_|\___/|_| |_|*/
 
  .illustration {
-     width: 800px;
-     height: 8  00px;
+     width: 600px;
+     height: 600px;
 
  }
  
