@@ -16,10 +16,9 @@ function fecharModal(id) {
 /* 
             position: fixed;
             width: 100%;
-            top: 0;*/
+            top: 0;
 
 
-/* */
 
 document.querySelector("#items").addEventListener("wheel", event => {
     if(event.daltaY > 0) {
