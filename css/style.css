@@ -258,8 +258,8 @@ ______                  __ _      _
     justify-content: space-evenly;
     flex-wrap: wrap;  
     margin: 10px auto 10px; 
-    padding: 10px;  
-    border-bottom: 1px solid #ccc ;
+    padding: 5px;  
+    
 }
 
 .text-bene p {
@@ -299,20 +299,20 @@ ______                  __ _      _
 }
 
 .categorias h2 {
-    margin-left: 8px;
+    margin-left: 10px;
 }
 
 .block-categoria {
     height: 3px;
     background-color: #0C37E3;
     width: 48px;  
-    margin-left: 10px;
+    margin: 20px 0px 20px 10px;
     
 }
 
 .flex-categoria {
     display: flex;
-    flex-wrap: wrap;
+    gap: 5px;
     justify-content: center;
     padding-top: 10px;
     
@@ -329,19 +329,19 @@ ______                  __ _      _
 
 .categoria-1 {
   
-    background-image: url('../imagens/Modelo-0.jpeg'); 
+    background-image: url('../imagens/Modelo-0\ 400x580.jpeg'); 
 }
 
 .categoria-2 {
-    background-image: url('../imagens/Modelo-1.jpeg'); 
+    background-image: url('../imagens/Modelo-1\ 400x580.jpeg'); 
 }
 
 .categoria-3 {
-    background-image: url('../imagens/Modelo-2.jpeg');
+    background-image: url('../imagens/Modelo-2\ 400x580.jpeg');
 }
 
 .categoria-4 {
-    background-image: url('../imagens/Modelo-3.jpeg');   
+    background-image: url('../imagens/Modelo-3\ 400x580.jpeg');   
 }
 
 
@@ -371,13 +371,16 @@ ______                  __ _      _
 
 /*                       Banner comercial - 1 */
 
-.banner-comercial-1 {
-    background-image: url('../imagens/Banner-comercial-1.jpeg');
-    background-repeat: no-repeat;
-    margin: 20px auto 20px;  
-    flex-wrap: wrap;
-    max-width: 1200px;
-    height: 250px;
+.bg-comercial {
+    width: 99vw;
+    
+}
+
+.banner-comercial-1 img {  
+   
+    margin: 50px auto 40px;  
+    width: 100%;
+    height: 100%;   
 }
 
 /*
