@@ -13,15 +13,10 @@ function fecharModal(id) {
 }
 
 
-/* 
-            position: fixed;
-            width: 100%;
-            top: 0;
 
-
-
+/*
 document.querySelector("#items").addEventListener("wheel", event => {
-    if(event.daltaY > 0) {
+    if(event.deltaY > 0) {
         event.target.scrollBy(300, 0)
     } else {
         event.target.scrollBy(-300, 0)
@@ -29,6 +24,10 @@ document.querySelector("#items").addEventListener("wheel", event => {
 });
 
 
+/* */
+
+
+ 
 /* */
 
 
@@ -46,4 +45,6 @@ function fixarMenuNoTopo() {
         nav.classList.remove('FixoNoTopo')
     }
 }
+
+
 

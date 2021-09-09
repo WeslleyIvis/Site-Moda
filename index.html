@@ -10,13 +10,20 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap"
         rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="css/carrousel.css">
+
+
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
-
-
-
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <title>Moda</title>
 
 
@@ -82,7 +89,7 @@
             <figure class="item">
                 <h1><img src="imagens/banner-1 carrousel 1920x610.png" alt=""></h1>
             </figure>
-            
+
             <figure class="item">
                 <h1><img src="imagens/banner-2 carrousel 1920x610.png" alt=""></h1>
             </figure>
@@ -95,12 +102,12 @@
                 <a href="#item-1" class="control-button">•</a>
                 <a href="#item-2" class="control-button">•</a>
                 <a href="#item-3" class="control-button">•</a>
-              </div>
+            </div>
 
-            
+
         </div>
 
-<!--
+        <!--
         <section id="carrousel-bg">
             <div id="carousel">
                 <div id="items">
@@ -157,7 +164,7 @@
             </div>
         </div>
 
-        <div class="bg-categorias">
+        <section class="bg-categorias">
             <div class="categorias">
 
                 <h2>CATEGORIAS</h2>
@@ -183,14 +190,15 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
         <div class="bg-comercial">
-            <div class="banner-comercial-1"><img src="imagens/Banner-comercial-2.jpeg" alt=""> </div>           
+            <div class="banner-comercial-1"><img src="imagens/Banner-comercial-2.jpeg" alt=""> </div>
+
         </div>
 
 
-        <div class="bg-novidades">
+        <section class="galery">
             <div class="novidades">
                 <h2>NOVIDADES</h2>
                 <div class="block-categoria"></div>
@@ -225,9 +233,41 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        
+
+
+        <section class="bg-carousel">
+            <div class="carousel">
+                <div>
+                    <div><img src="imagens/Modelo-0 400x580.jpeg" alt=""></div>
+                    <span></span>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-1 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-2 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-3 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-0 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-1 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-2 400x580.jpeg" alt=""></div>
+                </div>
+                <div>
+                    <div><img src="imagens/Modelo-3 400x580.jpeg" alt=""></div>
+                </div>
+
+            </div>
+        </section>
+
 
         <section class="radius-model">
             <div class="radius-modelo-0 radius-form-modelos" onclick="abrirModal('modal')"></div>
@@ -338,6 +378,23 @@
     </footer>
 
     <script src="javascript/index.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+    <script src="javascript/slick.js" type="text/javascript" charset="utf-8"></script>
+    <script>
+
+        $('.carousel').slick({
+            dots: true,
+            infinite: true,
+            slidesToShow: 4,
+            slidesToScroll: 1
+        });
+
+
+    </script>
+
+
 </body>
+
+
 
 </html>
