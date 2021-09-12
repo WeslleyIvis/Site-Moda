@@ -310,14 +310,14 @@ ______                  __ _      _
 }
 
 .categorias h2 {
-    margin-left: 10px;
+
 }
 
 .block-categoria {
     height: 3px;
-    background-color: #0C37E3;
-    width: 48px;  
-    margin: 20px 0px 20px 10px;
+    background-color: #3b3b3b;
+    width: 65px;  
+    margin: 0px 0px 20px 2px;
     
 }
 
