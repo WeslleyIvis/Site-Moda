@@ -326,7 +326,7 @@
             </div>
             </section,>
 
-            <section class="block-imp-items">
+         <!--<section class="block-imp-items">
                 <h2>IMPERDÍVEIS</h2>
                 <div class="block-categoria"></div>
 
@@ -335,26 +335,147 @@
                     <div class="imp-img-1 imp-img-form"></div>
                     <div class="imp-img-2 imp-img-form"></div>
                 </div>
-            </section>
+            </section>-->   
 
-            <div class="sobre">
-                <div class="sobre-info">
-                    <h3>Sobre</h3>
-                    <p>O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
-                        positivamente <br>
-                        acorreta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
 
-                    <p> O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
-                        positivamente <br>
-                        a correta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
-                </div>
 
-                <div class="sobre-img"></div>
-            </div>
 
-            <img src="imagens/Tokyo.png" width="900px" alt="">
     </main>
 
+    <section class="block-slide">
+
+        <section class="bg-top">
+            <h1>Novidades</h1>
+
+        </section>
+
+
+        <section class="layout-carousel">
+
+            <div class="grid-carousel"><span> 
+                <h1>Hello</h1>
+                    Lorem ipsum egestas quisque suscipit tincidunt donec tortor, aenean
+                    torquent venenatis praesent habitasse. integer netus nulla massa neque aliquam aliquet morbi
+                    eleifend morbi, himenaeos aliquam lacus litora ut faucibus sagittis rhoncus elit, facilisis vel
+                    habitasse tincidunt auctor ligula venenatis tempus. etiam non placerat fusce accumsan vestibulum
+                    pretium proin, quisque arcu consectetur quis pellentesque sollicitudin ullamcorper hendrerit, tempus
+                    conubia cubilia dictumst diam aliquam</span></div>
+
+            <section class="carousel-slider">
+                <div class="slider-for grid-carousel">
+                    <div class="">
+                        <img src="imagens/Tokyo.png" alt="">
+
+                     
+                    </div>
+                    <div class="">
+                        <img src="imagens/Tokyo1.png" alt="">
+
+                 
+                    </div>
+                    <div class="">
+                        <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-0.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-1.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-2.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-5.jpeg" alt="">
+
+                      
+                    </div>
+                </div>
+            </section>
+
+            <section class="carousel-slider">
+                <div class="slider-nav grid-carousel">
+                    <div class="">
+                        <img src="imagens/Tokyo.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/Tokyo1.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-0.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-1.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-2.jpeg" alt="">
+
+                      
+                    </div>
+                    <div class="">
+                        <img src="imagens/radius-modelo-5.jpeg" alt="">
+
+                      
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <section class="bg-bottom">
+            <h1>as</h1>
+
+        </section>
+
+    </section>
+
+
+
+    <div class="sobre">
+        <div class="sobre-info">
+            <h3>Sobre</h3>
+            <p>O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
+                positivamente <br>
+                acorreta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
+
+            <p> O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
+                positivamente <br>
+                a correta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
+        </div>
+
+        <div class="sobre-img"></div>
+
+    </div>
     <footer>
 
         <section class="newsletter">
@@ -425,6 +546,25 @@
                 // settings: "unslick"
                 // instead of a settings object
             ]
+        });
+
+        $('.single-item').slick();
+
+
+        $('.slider-for').slick({
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: false,
+            fade: true,
+            asNavFor: '.slider-nav'
+        });
+        $('.slider-nav').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            asNavFor: '.slider-for',
+            dots: true,
+            centerMode: true,
+            focusOnSelect: true
         });
     </script>
 

@@ -304,13 +304,9 @@ ______                  __ _      _
 
 .categorias {
     padding: 20px;
-    max-width: 1680px;
+    max-width: 1280px;
     margin: 0 auto;
     
-}
-
-.categorias h2 {
-
 }
 
 .block-categoria {
@@ -331,10 +327,9 @@ ______                  __ _      _
 
 .categoria-form {
     width: 400px;
-    height: 580px;
+    height: 500px;
     background-size: cover;
     background-position: center;  
-    transition: width 1s, height 2s, transform 5s;
     margin: 0 auto;
 }
 
@@ -699,5 +694,74 @@ ______          _
     flex-wrap: wrap;
 }
 
+
+
+
+.bg-top {
+    background-image: url('../imagens/Tokyo.png');
+    background-size: cover;
+    width: 99vw;
+    height: 300px;
+    display: flex;
+    align-content: center;
+}
+
+.bg-bottom {
+    background-image: url('../imagens/Tokyo1.png');
+    background-size: cover;
+    width: 99vw;
+    height: 100px;
+}
+
+.layout-carousel {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 0 auto;
+    padding: 10px;
+
+}
+
+.grid-carousel:nth-child(1) {
+    grid-row: 1/3;
+    
+}
+
+
+
+.carousel-slider {  
+    max-width: 1200px;
+    margin: 0 auto;
+    align-self: center;
+    justify-content: center;
+    margin-right: 50px;
+}
+
+.grid-carousel h1 {
+    font-size: 3em;
+}
+
+.grid-carousel span {
+    font-size: 1.5em;
+}
+
+.slider-for img {
+    max-width: 100vw;
+    margin: 0 auto;
+    height: 400px;   
+}
+
+.slider-nav {
+    max-width:100vw;
+    margin: 0 auto;
+}
+
+.slider-nav img {
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    
+}
 
 /* transition: all .2s cubic-bezier(0.04, 0.99, 0.76, -0.36); */
