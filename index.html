@@ -107,19 +107,6 @@
 
         </div>
 
-        <!--
-        <section id="carrousel-bg">
-            <div id="carousel">
-                <div id="items">
-                    <div class="item"><img src="imagens/Carousel-1.png" alt=""></div>
-                    <div class="item"><img src="imagens/Banner-comercial-1.jpeg" alt=""></div>
-                    <div class="item"><img src="imagens/Carousel-1.png" alt=""></div>
-                </div>
-            </div>
-        </section>
-
--->
-
         <div class="bg-beneficios">
             <div class="beneficios">
                 <div class="beneficios-item">
@@ -326,7 +313,7 @@
             </div>
             </section,>
 
-         <!--<section class="block-imp-items">
+            <!--<section class="block-imp-items">
                 <h2>IMPERDÍVEIS</h2>
                 <div class="block-categoria"></div>
 
@@ -335,10 +322,7 @@
                     <div class="imp-img-1 imp-img-form"></div>
                     <div class="imp-img-2 imp-img-form"></div>
                 </div>
-            </section>-->   
-
-
-
+            </section>-->
 
     </main>
 
@@ -352,108 +336,114 @@
 
         <section class="layout-carousel">
 
-            <div class="grid-carousel"><span> 
-                <h1>Hello</h1>
+            <div class="grid-carousel text-carousel">
+                <div>
+                    <h1>Moda</h1>
                     Lorem ipsum egestas quisque suscipit tincidunt donec tortor, aenean
                     torquent venenatis praesent habitasse. integer netus nulla massa neque aliquam aliquet morbi
                     eleifend morbi, himenaeos aliquam lacus litora ut faucibus sagittis rhoncus elit, facilisis vel
                     habitasse tincidunt auctor ligula venenatis tempus. etiam non placerat fusce accumsan vestibulum
                     pretium proin, quisque arcu consectetur quis pellentesque sollicitudin ullamcorper hendrerit, tempus
-                    conubia cubilia dictumst diam aliquam</span></div>
+                    conubia cubilia dictumst diam aliquam
+                </div>
+            </div>
 
             <section class="carousel-slider">
                 <div class="slider-for grid-carousel">
                     <div class="">
-                        <img src="imagens/Tokyo.png" alt="">
+                        <img src="media/Tokyo.png" alt="">
+                            dsadsadsa
 
-                     
                     </div>
                     <div class="">
                         <img src="imagens/Tokyo1.png" alt="">
 
-                 
+
                     </div>
                     <div class="">
                         <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-0.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-1.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-2.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-5.jpeg" alt="">
 
-                      
+
                     </div>
                 </div>
             </section>
 
-            <section class="carousel-slider">
+            <!--      <section class="carousel-slider">
                 <div class="slider-nav grid-carousel">
                     <div class="">
                         <img src="imagens/Tokyo.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/Tokyo1.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-0.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-1.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-2.jpeg" alt="">
 
-                      
+
                     </div>
                     <div class="">
                         <img src="imagens/radius-modelo-5.jpeg" alt="">
 
-                      
+
                     </div>
                 </div>
-            </section>
+            </section>-->
+
+            <div class="grid-carousel text-carousel-1">
+                dasdsa
+            </div>
         </section>
 
         <section class="bg-bottom">
-            <h1>as</h1>
 
         </section>
 
@@ -529,6 +519,15 @@
                     }
                 },
                 {
+                    breakpoint: 850,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
                     breakpoint: 600,
                     settings: {
                         slidesToShow: 1,
@@ -536,7 +535,7 @@
                     }
                 },
                 {
-                    breakpoint: 480,
+                    breakpoint: 300,
                     settings: {
                         slidesToShow: 1,
                         slidesToScroll: 1
@@ -548,24 +547,22 @@
             ]
         });
 
-        $('.single-item').slick();
-
 
         $('.slider-for').slick({
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            arrows: false,
-            fade: true,
-            asNavFor: '.slider-nav'
-        });
-        $('.slider-nav').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            asNavFor: '.slider-for',
             dots: true,
-            centerMode: true,
-            focusOnSelect: true
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            adaptiveHeight: true
         });
+        /*  $('.slider-nav').slick({
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              asNavFor: '.slider-for',
+              dots: true,
+              centerMode: true,
+              focusOnSelect: true
+          });*/
     </script>
 
 </body>
