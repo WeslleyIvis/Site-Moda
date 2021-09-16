@@ -6,22 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,300&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
-        rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style1050px.css">
     <link rel="stylesheet" type="text/css" href="css/slick.css">
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css">
     <title>Moda</title>
@@ -36,7 +26,7 @@
     <div class="msg-anuncio"></div>
 
     <header class="menu-bg">
-        <section class="nav-1">
+        <section class="menu-logo">
             <div class="logo">
                 <div class="img-logo"></div>
             </div>
@@ -49,14 +39,14 @@
             </div>
 
 
-            <div class="nav-1 self">
+            <div class="cadastrar self">
                 <a href="formulario.html"><img class="icon" src="imagens/icones/icon-interface-user-circle@48x48.svg"
                         alt="">
                 </a>
                 <p class="self">Entre ou <br> Cadastre-se</p>
             </div>
 
-            <div class="position-relative self ">
+            <div class="carrinho self ">
                 <a href="formulario.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
                 </a>
                 <p class="self">Suas compras </p>
@@ -66,11 +56,9 @@
     </header>
 
     <nav>
-        <div class="nav-items">
+        <div class="nav-pc">
             <ul>
-
-
-                <li><a href="index.html" >Home</a></li>
+                <li><a href="index.html">Home</a></li>
 
                 <li class="btn-group">
                     <button type="button" class="dropdown-toggle nav-button-style" data-toggle="dropdown"
@@ -89,7 +77,7 @@
                 <li class="btn-group">
                     <button type="button" class="dropdown-toggle nav-button-style" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Masculino</button>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-menu dropdown-menu-center">
                         <button class="dropdown-item" type="button">Action</button>
                         <button class="dropdown-item" type="button">Another action</button>
                         <button class="dropdown-item" type="button">Something else here</button>
@@ -99,26 +87,68 @@
                 <li class="btn-group">
                     <button type="button" class="dropdown-toggle nav-button-style" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false">Infantil</button>
-                    <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-menu dropdown-menu-center">
                         <button class="dropdown-item" type="button">Action</button>
                         <button class="dropdown-item" type="button">Another action</button>
                         <button class="dropdown-item" type="button">Something else here</button>
                     </div>
                 </li>
-
-
                 <li><a href="">Lingerie</a></li>
-
             </ul>
         </div>
 
-        
+
+        <div class="nav-mobile">
+            <ul>
+                <li class="btn-group">
+                    <button type="button" class="nav-button-style" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false"><img src="imagens/icones/icon-menu-nav.svg" alt=""></button>
+                    <div class="dropdown-menu dropdown-menu-center">
+
+                        <div class="cadastrar self">
+                            <a href="formulario.html"><img class="icon"
+                                    src="imagens/icones/icon-interface-user-circle@48x48.svg" alt="">
+                            </a>
+                            <p class="self">Entre ou <br> Cadastre-se</p>
+                        </div>
+
+                        <h6 class="dropdown-header">Dropdown header</h6>
+                        <a class="dropdown-item" href="formulario.html">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <button type="button" class="dropdown-toggle nav-button-style" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">Feminino</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+                </li>
+            </ul>
+
+            <div class="logo">
+                <div class="img-logo"></div>
+            </div>
+
+            <div class="submit-line">
+                <input type="text" placeholder="O que você procura?">
+                <button class="submit-lente" type="submit">
+                    <div class="img-lent"></div>
+                </button>
+            </div>
+
+            <div class="carrinho self ">
+                <a href="formulario.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
+                </a>
+
+                <span class="contador">0</span>
+            </div>
+        </div>
+
     </nav>
 
 
     <main>
 
-        <div class="gallery autoplay items-3">
+        <section class="gallery autoplay items-3">
 
             <div id="item-1" class="control-operator"></div>
             <div id="item-2" class="control-operator"></div>
@@ -140,7 +170,7 @@
                 <a href="#item-1" class="control-button">•</a>
                 <a href="#item-2" class="control-button">•</a>
                 <a href="#item-3" class="control-button">•</a>
-            </div>
+        </section>
 
 
         </div>
@@ -223,16 +253,16 @@
         </div>
 
 
-        <section class="galery">
+        <section class="galery-items">
             <div class="galery-box">
-                <h2>NOVIDADES</h2>
+                <h2>Variedades </h2>
                 <div class="block-categoria"></div>
 
                 <div class="carousel">
                     <div class="carousel-item">
                         <a href=""><img src="imagens/roupas/Roupa-modelo-1-bgcolor.png" alt="">
                             <div class="carousel-valor">
-                                <span>Nome da roupa </span>
+                                <span>Nome</span>
                                 <span>a</span>
                             </div>
                         </a>
@@ -361,131 +391,81 @@
                     <div class="imp-img-2 imp-img-form"></div>
                 </div>
             </section>-->
+            <section class="block-slide">
+
+                <section class="bg-top">
+                    <h1>Novidades</h1>
+
+                </section>
+
+
+                <section class="layout-carousel">
+
+                    <div class="grid-carousel text-carousel">
+                        <div>
+                            <h1>Moda</h1>
+                            Lorem ipsum egestas quisque suscipit tincidunt donec tortor, aenean
+                            torquent venenatis praesent habitasse. integer netus nulla massa neque aliquam aliquet morbi
+                            eleifend morbi, himenaeos aliquam lacus litora ut faucibus sagittis rhoncus elit, facilisis
+                            vel
+                            habitasse tincidunt auctor ligula venenatis tempus. etiam non placerat fusce accumsan
+                            vestibulum
+                            pretium proin, quisque arcu consectetur quis pellentesque sollicitudin ullamcorper
+                            hendrerit, tempus
+                            conubia cubilia dictumst diam aliquam
+                        </div>
+                    </div>
+
+                    <section class="carousel-slider">
+                        <div class="slider-for grid-carousel">
+                            <div class="">
+                                <img src="media/Tokyo.png" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/Tokyo1.png" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/radius-modelo-0.jpeg" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/radius-modelo-1.jpeg" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/radius-modelo-2.jpeg" alt="">
+
+
+                            </div>
+                            <div class="">
+                                <img src="imagens/radius-modelo-5.jpeg" alt="">
+
+
+                            </div>
+                        </div>
+                    </section>
+
+
 
     </main>
 
-    <section class="block-slide">
 
-        <section class="bg-top">
-            <h1>Novidades</h1>
-
-        </section>
-
-
-        <section class="layout-carousel">
-
-            <div class="grid-carousel text-carousel">
-                <div>
-                    <h1>Moda</h1>
-                    Lorem ipsum egestas quisque suscipit tincidunt donec tortor, aenean
-                    torquent venenatis praesent habitasse. integer netus nulla massa neque aliquam aliquet morbi
-                    eleifend morbi, himenaeos aliquam lacus litora ut faucibus sagittis rhoncus elit, facilisis vel
-                    habitasse tincidunt auctor ligula venenatis tempus. etiam non placerat fusce accumsan vestibulum
-                    pretium proin, quisque arcu consectetur quis pellentesque sollicitudin ullamcorper hendrerit, tempus
-                    conubia cubilia dictumst diam aliquam
-                </div>
-            </div>
-
-            <section class="carousel-slider">
-                <div class="slider-for grid-carousel">
-                    <div class="">
-                        <img src="media/Tokyo.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/Tokyo1.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-0.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-1.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-2.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-5.jpeg" alt="">
-
-
-                    </div>
-                </div>
-            </section>
-
-            <!--      <section class="carousel-slider">
-                <div class="slider-nav grid-carousel">
-                    <div class="">
-                        <img src="imagens/Tokyo.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/Tokyo1.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/roupas/Roupa-modelo-3-bgcolor.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/roupas/Roupa-modelo-4-bgcolor.png" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-0.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-1.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-2.jpeg" alt="">
-
-
-                    </div>
-                    <div class="">
-                        <img src="imagens/radius-modelo-5.jpeg" alt="">
-
-
-                    </div>
-                </div>
-            </section>-->
-
-            <div class="grid-carousel text-carousel-1">
-                dasdsa
-            </div>
-        </section>
-
-        <section class="bg-bottom">
-
-        </section>
-
-    </section>
 
 
 
@@ -553,10 +533,11 @@
     <script>
 
         $('.carousel').slick({
-            //dots: true,
+            dots: true,
             infinite: true,
-            slidesToShow: 4,
-            slidesToScroll: 4,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            adaptiveHeight: true,
             responsive: [
                 {
                     breakpoint: 1024,

@@ -31,16 +31,20 @@ document.querySelector("#items").addEventListener("wheel", event => {
 const nav = document.getElementsByTagName('nav')[0];
 const topNav = nav.offsetTop;
 
+
+
 window.onscroll = function(){
     fixarMenuNoTopo();
 }
 
 function fixarMenuNoTopo() {
+    
     if (window.pageYOffset >= topNav) {
         nav.classList.add('FixoNoTopo')
     } else {
         nav.classList.remove('FixoNoTopo')
     }
+   
 }
 
 
