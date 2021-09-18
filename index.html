@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,400;0,600;1,200&display=swap"
+        rel="stylesheet">
+
     <link rel="stylesheet" href="css/bootstrap.css">
 
     <link rel="stylesheet" href="css/modal.css">
@@ -22,13 +27,13 @@
 <body>
 
 
-
     <div class="msg-anuncio"></div>
 
     <header class="menu-bg">
         <section class="menu-logo">
-            <div class="logo"> </div>
-
+            <div class="logo">
+                <div class="img-logo"></div>
+            </div>
 
             <div class="submit-line">
                 <input type="text" placeholder="O que você procura?">
@@ -46,13 +51,15 @@
             </div>
 
             <div class="carrinho self ">
-                <a href="formulario.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
+                <a href="manuntençao.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
                 </a>
                 <p class="self">Suas compras </p>
                 <span class="contador">0</span>
             </div>
         </section>
     </header>
+
+
 
     <!--
       
@@ -437,16 +444,16 @@ ______
         </section>
 
         <section class="block-imp-items">
-                <h2>IMPERDÍVEIS</h2>
-                <div class="block-categoria"></div>
+            <h2>IMPERDÍVEIS</h2>
+            <div class="block-categoria"></div>
 
-                <div class="imperdiveis">
-                    <div class="imp-img-0"></div>
-                    <div class="imp-img-1"></div>
-                    <div class="imp-img-2"></div>
-                </div>
-            </section>
-       
+            <div class="imperdiveis">
+                <div class="imp-img-0"></div>
+                <div class="imp-img-1"></div>
+                <div class="imp-img-2"></div>
+            </div>
+        </section>
+
         <section class="block-slide">
 
             <div class="bg-top">
@@ -511,10 +518,10 @@ ______
 
     <div class="sobre">
         <div class="sobre-info">
-            <h3>Sobre</h3>
-            <p>O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
-                positivamente <br>
-                acorreta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
+            <h3>Sobre o site</h3>
+            <p>O site esta em desenvolvimento, alguns conteúdos estão temporariamente indisponiveis <br>
+                <br> apropriadas objetivos.
+            </p>
 
             <p> O que temos sempre que ter em mente é que a determinação clara de objetivos afeta
                 positivamente <br>
@@ -620,9 +627,11 @@ ______
 
         $('.slider-for').slick({
             infinite: true,
-            slidesToShow: 3,
+            slidesToShow: 4,
             slidesToScroll: 3,
-            adaptiveHeight: true
+            adaptiveHeight: true,
+            autoplay: true,
+            autoplaySpeed: 2000
         });
 
     </script>

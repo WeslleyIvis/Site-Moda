@@ -11,11 +11,8 @@
     .nav-mobile {
         display: none;
     }
-
-    ..block-categoria {
-        
-    }
 }
+
 
 @media  (max-width: 1024px) {
     .msg-anuncio {
@@ -28,6 +25,7 @@
    
     .nav-pc {
         display: none;
+        
     }
 
     .nav-mobile {
@@ -253,7 +251,7 @@ ______          _ _            ___  ___          _      _
     }
 
     .modal {
-        width: 6    0%;
+        width: 60%;
         height: 65%;
         background: #fff;
         border: 1px solid #000;
@@ -267,4 +265,4 @@ ______          _ _            ___  ___          _      _
         background-position: bottom ;
         background-repeat: no-repeat;
     }
-}
+} 
