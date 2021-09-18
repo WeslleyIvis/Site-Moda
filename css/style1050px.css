@@ -11,6 +11,10 @@
     .nav-mobile {
         display: none;
     }
+
+    ..block-categoria {
+        
+    }
 }
 
 @media  (max-width: 1024px) {
@@ -34,21 +38,20 @@
     .nav-button-style {
         background-color: rgb(255, 255, 255);
         height: 50px;
+        margin-left: 20px;
     }
 
     .nav-button-style > img {
         width: 50px;
         margin-top: 5px;
     }  
-
-    .nav-button-style:hover  {
-        background: #ecececea;       
-    }  
     
     .logo {
-        width: 60px;
+        background-image: url('../imagens/icones/logo-mobile.png');
+        width: 120px;
         height: 50px;
         margin: 0;
+        margin-left: 20px;
        
     }
 
@@ -108,6 +111,7 @@
 
  @media (max-width: 1024px){
         .gallery {
+           
             margin-top: 1;
         }
  }
@@ -162,20 +166,21 @@ ______                  __ _      _
     @media (max-width: 1024px) {
     .categorias {
         max-width: 1024px;
+        padding: 20px;
     }
 
     .categorias h2 {
         font-size: 1em;
-        font-weight: ;
+        
     }
 
     .categoria-form {
-        width: 200px;
-        height: 300px;
+        width: 300px;
+        height: 330px;
     }
 
     .flex-categoria {
-        max-width: 800px;
+        max-width: 900px;
         margin: auto;
         gap: 10px;
     }
@@ -184,7 +189,7 @@ ______                  __ _      _
         /* bg-comercial*/
 
         .bg-comercial {
-            display: none;
+            max-width: 99vw;
         }
         
 }
@@ -217,8 +222,9 @@ ______
     }
 
     .carousel {
-        width: 700px;
+        width: 900px;
         margin: 0 auto;
+        margin-left: 45px;
         display: flex;
       
     }
@@ -227,4 +233,38 @@ ______
         width: 200px;
         height: 300px;
     }
-}                 
+}           
+
+
+/*
+______          _ _            ___  ___          _      _ 
+| ___ \        | (_)           |  \/  |         | |    | |
+| |_/ /__ _  __| |_  ___  ___  | .  . | ___   __| | ___| |
+|    // _` |/ _` | |/ _ \/ __| | |\/| |/ _ \ / _` |/ _ \ |
+| |\ \ (_| | (_| | | (_) \__ \ | |  | | (_) | (_| |  __/ |
+\_| \_\__,_|\__,_|_|\___/|___/ \_|  |_/\___/ \__,_|\___|_|*/
+
+
+@media (max-width: 1024px) {
+    .radius-form-modelos {
+        width: 100px;
+        height: 100px;
+        background-position: unset;
+    }
+
+    .modal {
+        width: 6    0%;
+        height: 65%;
+        background: #fff;
+        border: 1px solid #000;
+        margin: 8px auto 0 auto;
+    }
+
+    .radius-modal-tamanho {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: bottom ;
+        background-repeat: no-repeat;
+    }
+}
