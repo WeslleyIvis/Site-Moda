@@ -9,7 +9,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;1,200&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/modal.css">
@@ -139,7 +140,7 @@
             </div>
 
             <div class="carrinho self ">
-                <a href="formulario.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
+                <a href="manuntençao.html"><img class="icon" src="imagens/icones/iCONBOLSA.svg" alt="">
                 </a>
 
                 <span class="contador">0</span>
@@ -152,36 +153,38 @@
 
     <main>
 
-        <section class="gallery autoplay items-3">
+        <section class="carrousel-banners">
 
-            <div id="item-1" class="control-operator"></div>
-            <div id="item-2" class="control-operator"></div>
-            <div id="item-3" class="control-operator"></div>
+            <picture class="item">
+                <source media="(max-width: 425px)" srcset="imagens/banner-1-carrousel-425x300.png">
+                <source media="(max-width: 700px)" srcset="imagens/banner-1-carrousel-600x300.png">
 
-            <figure class="item">
-                <h1><img src="imagens/banner-1 carrousel 1920x610.png" alt=""></h1>
-            </figure>
+                <img src="imagens/banner-1-carrousel-1920x610.png" alt="">
+            </picture>
 
-            <figure class="item">
-                <h1><img src="imagens/banner-2 carrousel 1920x610.png" alt=""></h1>
-            </figure>
+            <picture class="item">
+                <source media="(max-width: 425px)" srcset="imagens/banner-2-carrousel-425x300.png">
+                <source media="(max-width: 700px)" srcset="imagens/banner-2-carrousel-600x300.png">
 
-            <figure class="item">
-                <h1><img src="imagens/banner-1 carrousel 1920x610.png" alt=""></h1>
-            </figure>
+                <img src="imagens/banner-2-carrousel-1920x610.png" alt="">
+            </picture>
 
-            <div class="controls">
-                <a href="#item-1" class="control-button">•</a>
-                <a href="#item-2" class="control-button">•</a>
-                <a href="#item-3" class="control-button">•</a>
+            <picture class="item">
+                <source media="(max-width: 425px)" srcset="imagens/banner-1-carrousel-425x300.png">
+                <source media="(max-width: 700px)" srcset="imagens/banner-1-carrousel-600x300.png">
+
+                <img src="imagens/banner-1-carrousel-1920x610.png" alt="">
+            </picture>
+
+
         </section>
 
 
-        </div>
 
 
 
-        <div class="bg-beneficios">
+
+        <section class="bg-beneficios">
             <div class="beneficios">
                 <div class="beneficios-item">
                     <div class="icon-bene">
@@ -223,7 +226,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
 
         <section class="bg-categorias">
@@ -254,10 +257,12 @@
             </div>
         </section>
 
-        <div class="bg-comercial">
-            <div class="banner-comercial-1"><img src="imagens/Banner-comercial-1.jpeg" alt=""> </div>
-
-        </div>
+        <picture class="comercial">
+            <div class="banner-comercial">
+                <source meida="(max-width: 425px)" srcset="imagens/Banner-comercial-1-425x300.jpeg">
+                <img src="imagens/Banner-comercial-1.jpeg" alt="">
+            </div>
+        </picture>
 
 
 
@@ -526,6 +531,18 @@
     <script src="javascript/slick.js" type="text/javascript" charset="utf-8"></script>
     <script>
 
+        $('.carrousel-banners').slick({
+            dots: true,
+            arrows: false,
+
+            infinite: true,
+            speed: 500,
+            fade: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            cssEase: 'linear'
+        });
+
         $('.carousel').slick({
 
             infinite: true,
@@ -537,25 +554,25 @@
                     breakpoint: 1025,
                     settings: {
                         slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+
+                    }
+                },
+                {
+                    breakpoint: 770,
+                    settings: {
+                        slidesToShow: 3,
                         slidesToScroll: 3,
                         infinite: true,
 
                     }
                 },
                 {
-                    breakpoint: 850,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        infinite: true,
-                        dots: true
-                    }
-                },
-                {
                     breakpoint: 600,
                     settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
+                        slidesToShow: 4,
+                        slidesToScroll: 4
                     }
                 },
                 {
@@ -578,7 +595,44 @@
             slidesToScroll: 3,
             adaptiveHeight: true,
             autoplay: true,
-            autoplaySpeed: 2000
+            autoplaySpeed: 2000,
+            responsive: [
+                {
+                    breakpoint: 1025,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 4,
+                        infinite: true,
+
+                    }
+                },
+                {
+                    breakpoint: 770,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 3,
+                        infinite: true,
+
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 2
+                    }
+                },
+                {
+                    breakpoint: 300,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+                // You can unslick at a given breakpoint now by adding:
+                // settings: "unslick"
+                // instead of a settings object
+            ]
         });
 
     </script>

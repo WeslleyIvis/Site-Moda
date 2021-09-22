@@ -5,100 +5,127 @@
 | . ` |/ _` \ \ / /    
 | |\  | (_| |\ V /  
 \_| \_/\__,_| \_/   /*/
- 
 
-@media (min-width: 1024px) {
-    .nav-mobile {
-        display: none;
-    }
-}
+ /*1024px*/
+ @media (min-width: 1024px) {
+     .nav-mobile {
+         display: none;
+     }
+ }
 
 
-@media  (max-width: 1024px) {
-    .msg-anuncio {
-        display: none;  
-    }
+ @media (max-width: 1024px) {
+     .msg-anuncio {
+         display: none;
+     }
 
-    header {
-        display: none;
-    }
-   
-    .nav-pc {
-        display: none;
-        
-    }
+     header {
+         display: none;
+     }
 
-    .nav-mobile {
-        display: flex;
-        background: rgba(255, 255, 255, 0);
-    }
+     .nav-pc {
+         display: none;
 
-    .nav-button-style {
-        background-color: rgb(255, 255, 255);
-        height: 50px;
-        margin-left: 20px;
-    }
+     }
 
-    .nav-button-style > img {
-        width: 50px;
-        margin-top: 5px;
-    }  
-    
-    .logo {
-        background-image: url('../imagens/icones/logo-mobile.png');
-        width: 120px;
-        height: 50px;
-        margin: 0;
-        margin-left: 20px;
-       
-    }
+     .nav-mobile {
+         display   : flex;
+         background: rgba(255, 255, 255, 0);
+     }
 
-    .submit-line {
-        justify-self: center;
-        margin-left: 100px;
-        max-width: 500px;
-        flex: 1 0 auto;
-    }
+     .nav-button-style {
+         background-color: rgb(255, 255, 255);
+         height          : 50px;
+         margin-left     : 20px;
+     }
 
-    .submit-line > input {         
-        height: 20px;
-        font-size: 12px;
-        color: #505050;
-        border: none;
-        background: rgb(219, 219, 223);
-        outline: none;
-        padding: 12px;
-    }
+     .nav-button-style>img {
+         width     : 50px;
+         margin-top: 5px;
+     }
+
+     .logo {
+         background-image: url('../imagens/icones/logo-mobile.png');
+         width           : 120px;
+         height          : 50px;
+         margin          : 0;
+         margin-left     : 20px;
+
+     }
+
+     .submit-line {
+         justify-self: center;
+         margin-left : 100px;
+         max-width   : 500px;
+         flex        : 1 0 auto;
+     }
+
+     .submit-line>input {
+         height    : 20px;
+         font-size : 12px;
+         color     : #505050;
+         border    : none;
+         background: rgb(219, 219, 223);
+         outline   : none;
+         padding   : 12px;
+     }
+
+     .submit-lente {
+         width : 35px;
+         height: 24px;
+     }
+
+     .img-lent {
+         width : 15px;
+         height: 15px;
+     }
+
+     .carrinho {
+         margin-left: 100px;
+     }
+
+     .carrinho img {
+         width: 20px;
+     }
+
+     .carrinho span {
+         width    : 15px;
+         height   : 15px;
+         font-size: 10px;
+         top      : 25px;
+         left     : 20px;
+     }
+ }
+
+ /* 425px - Mobile L*/
+
+ @media (max-width: 425px) {
+
+     .nav-button-style>img {
+         width     : 35px;
+         margin-top: 0;
+     }
+
+     .logo {
+         width      : 60px;
+         height     : 30px;
+         margin-left: 0;
+         align-self : center;
+     }
 
     .submit-lente {
-        width: 35px;
+        width : 35px;
         height: 24px;
     }
 
-    .img-lent {
-        width: 15px;
-        height: 15px;
-    }
-    
-    .carrinho { 
-        margin-left: 100px;
-    }
-
-    .carrinho img{
-        width: 20px;
-    }
-
-    .carrinho span {
-        width: 15px;
-        height: 15px;
-        font-size: 10px;
-        top: 25px;
-        left: 20px;
-    }
-}
+     .carrinho {
+         margin-left: 20px;
+     }
+ }
 
 
-/* 
+
+ /* 
  _____                                     _ 
 /  __ \                                   | |
 | /  \/ __ _ _ __ _ __ ___  _   _ ___  ___| |
@@ -107,16 +134,22 @@
  \____/\__,_|_|  |_|  \___/ \__,_|___/\___|_|*/
 
 
- @media (max-width: 1024px){
-        .gallery {
-           
-            margin-top: 1;
-        }
+ @media (max-width: 1024px) {
+     .gallery {
+
+         margin-top: 0;
+     }
+
+     .gallery .item img {
+         background-image: url('../imagens/radius-modelo-0.jpeg');
+     }
+
+     
  }
 
 
 
-/* 
+ /* 
 ______                  __ _      _           
 | ___ \                / _(_)    (_)          
 | |_/ / ___ _ __   ___| |_ _  ___ _  ___  ___ 
@@ -125,32 +158,57 @@ ______                  __ _      _
 \____/ \___|_| |_|\___|_| |_|\___|_|\___/|___/
                                               */
 
-    @media (max-width: 1024px) {
-        .beneficios {
-            max-width: 1024px;
-            margin: 0;
-        }
+ @media (max-width: 1024px) {
+     .beneficios {
+         max-width: 1024px;
+         margin   : 0;
+     }
 
-        .beneficios h4 {
-            font-size: 1em;
-            color: #707070;
-        }
+     .beneficios h4 {
+         font-size: 1em;
+         color    : #707070;
+     }
 
-        .beneficios p {
-            font-size: 0.8em;
-        }
+     .beneficios p {
+         font-size: 0.8em;
+     }
 
-        .beneficios img {
-            width: 16px;
-            height: 16px;
-        }
-    }                                    
+     .beneficios img {
+         width : 16px;
+         height: 16px;
+     }
+ }
+
+ @media (max-width: 425px) {
+
+    .bg-beneficios {
+        overflow: hidden;
+    }
+
+    .text-bene p {
+        font-size: 0.7em;
+    }
+
+    .beneficios {
+        max-width: 850px;
+        width: 200%;
+        animation-name: animacao;
+        animation-duration: 15s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animacao {
+        0% {margin-left: 0;}
+        25% {margin-left: 0;}
+        30% {margin-left: -95%}
+        75% {margin-left: -95%}
+        80% {margin-right: 0;}
+        100% {margin-right: 0;}
+    }
+ }
 
 
-
-
-
-/*
+ /*
  _____       _                        _           
 /  __ \     | |                      (_)          
 | /  \/ __ _| |_ ___  __ _  ___  _ __ _  __ _ ___ 
@@ -161,31 +219,53 @@ ______                  __ _      _
                      |___/                        */
 
 
-    @media (max-width: 1024px) {
-    .categorias {
-        max-width: 1024px;
-        padding: 20px;
-    }
+ @media (max-width: 1024px) {
+     .categorias {
+         max-width: 1024px;
+         padding  : 20px;
+     }
 
-    .categoria-form {
-        width: 300px;
-        height: 330px;
-    }
-
-    .flex-categoria {
+     .flex-categoria {
         max-width: 900px;
-        margin: auto;
-        gap: 10px;
+        margin   : auto;
+        gap      : 10px;
+    }
+
+     .categoria-form {
+         width : 300px;
+         height: 330px;
+     }
+
+
+
+     /* bg-comercial*/
+
+    
+
+ }
+
+
+ @media (max-width: 425px) {
+
+    h2 {
+        font-size: 1em;
+    }
+
+    .block-categoria {
+        margin-bottom: 0;
+    }
+
+     .flex-categoria {
+         flex-wrap: wrap;
+     }
+
+     .categoria-form {
+        width : 48%;
+        height: 250px;
     }
 
 
-        /* bg-comercial*/
-
-        .bg-comercial {
-            max-width: 99vw;
-        }
-        
-}
+ }
 
 
 
@@ -198,38 +278,44 @@ ______
 | |\ \ (_) | |_| | |_) | (_| \__ \
 \_| \_\___/ \__,_| .__/ \__,_|___/
                  | |              
-                 |_|    */    
+                 |_|    */
 
-@media (max-width: 1024px) {
+ @media (max-width: 1024px) {
 
-    .galery-items {
-        padding: 20px;
-        
-    }
-
-    .galery-box {
-        width: 90vw;
-        margin: 0 auto;
-        margin-left: 0px;       
-       
-    }
-
-    .carousel {
-        width: 900px;
-        margin: 0 auto;
-        margin-left: 45px;
-        display: flex;
-      
-    }
-
-    .carousel img {
-        width: 200px;
-        height: 300px;
-    }
-}           
+     .galery-items {
+         padding: 20px;
+         margin : 0 auto;
+     }
 
 
-/*
+
+     .carousel {
+         max-width: 90vw;
+         margin   : 0 auto;
+     }
+
+     .carousel img {
+         width : 200px;
+         height: 300px;
+     }
+ }
+
+ /* 770px - Tablete*/
+
+ @media (max-width: 770px) {
+
+     .carousel {
+         width: 99%;
+     }
+
+     .carousel img {
+         width : 200px;
+         height: 300px;
+     }
+ }
+
+
+ /*
 ______          _ _            ___  ___          _      _ 
 | ___ \        | (_)           |  \/  |         | |    | |
 | |_/ /__ _  __| |_  ___  ___  | .  . | ___   __| | ___| |
@@ -238,31 +324,31 @@ ______          _ _            ___  ___          _      _
 \_| \_\__,_|\__,_|_|\___/|___/ \_|  |_/\___/ \__,_|\___|_|*/
 
 
-@media (max-width: 1024px) {
-    .radius-form-modelos {
-        width: 100px;
-        height: 100px;
-        background-position: unset;
-    }
+ @media (max-width: 1024px) {
+     .radius-form-modelos {
+         width              : 100px;
+         height             : 100px;
+         background-position: unset;
+     }
 
-    .modal {
-        width: 60%;
-        height: 65%;
-        background: #fff;
-        border: 1px solid #000;
-        margin: 8px auto 0 auto;
-    }
+     .modal {
+         width     : 60%;
+         height    : 65%;
+         background: #fff;
+         border    : 1px solid #000;
+         margin    : 8px auto 0 auto;
+     }
 
-    .radius-modal-tamanho {
-        width: 100%;
-        height: 100%;
-        background-size: cover;
-        background-position: bottom ;
-        background-repeat: no-repeat;
-    }
-} 
+     .radius-modal-tamanho {
+         width              : 100%;
+         height             : 100%;
+         background-size    : cover;
+         background-position: bottom;
+         background-repeat  : no-repeat;
+     }
+ }
 
-/*
+ /*
  _____                             _ _           _     
 |_   _|                           | (_)         (_)    
   | | _ __ ___  _ __   ___ _ __ __| |___   _____ _ ___ 
@@ -272,14 +358,14 @@ ______          _ _            ___  ___          _      _
                | |                                     
                |_|                                     */
 
-    @media (max-width: 1024px) {
-        .block-imp-items {
-            padding: 20px;
-        }
-    }
+ @media (max-width: 1024px) {
+     .block-imp-items {
+         padding: 20px;
+     }
+ }
 
 
-/* 
+ /* 
  _   _            _     _           _           
 | \ | |          (_)   | |         | |          
 |  \| | _____   ___  __| | __ _  __| | ___  ___ 
@@ -288,16 +374,27 @@ ______          _ _            ___  ___          _      _
 \_| \_/\___/ \_/ |_|\__,_|\__,_|\__,_|\___||___/
 */
 
-    @media (max-width: 1024px) {
-        .block-slide {
-            padding: 20px;
-        }
+ @media (max-width: 1024px) {
+     .block-slide {
+         padding: 20px;
+     }
 
-        .slider-for  {
-            max-width: 90vw;
-        }
+     .slider-for {
+         max-width: 90vw;
+     }
 
-        .slider-for img {
-            height: 300px;
-        }
-    }
+     .slider-for img {
+         height: 300px;
+     }
+ }
+
+ /* SObre*/
+
+ @media (max-width: 1024px) {
+     .sobre-img {
+         height             : 50vw;
+         width              : 350px;
+         background-position: center;
+         align-self         : center;
+     }
+ }

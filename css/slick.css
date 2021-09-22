@@ -203,6 +203,7 @@
 .slick-prev
 {
     left: -25px;
+    z-index: 99;
 }
 [dir='rtl'] .slick-prev
 {
@@ -239,7 +240,13 @@
 /* Dots */
 .slick-dotted.slick-slider
 {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 425px) {
+    .slick-dotted.slick-slider {
+        margin-bottom: 0;
+    }
 }
 
 .slick-dots
@@ -248,11 +255,11 @@
     bottom: -25px;
 
     display: block;
-
+    
     width: 100%;
     padding: 0;
     margin: 0;
-
+    bottom: 30px;
     list-style: none;
 
     text-align: center;
