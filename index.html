@@ -257,10 +257,10 @@
             </div>
         </section>
 
-        <picture class="comercial">
+        <picture>
             <div class="banner-comercial">
-                <source meida="(max-width: 425px)" srcset="imagens/Banner-comercial-1-425x300.jpeg">
-                <img src="imagens/Banner-comercial-1.jpeg" alt="">
+                <source media="(max-width: 700px)" srcset="imagens/Banner-comercial-1-425x300.jpeg">
+                <img src="imagens/Banner-comercial-1.jpeg" alt="Banner comecial compre pelo Whatsapp">
             </div>
         </picture>
 
@@ -347,50 +347,52 @@
 
 
         <section class="radius-model">
-            <div class="radius-modelo-0 radius-form-modelos" onclick="abrirModal('modal')"></div>
+            <div class="radius-overflow">
+                <div class="radius-modelo-0 radius-form-modelos" onclick="abrirModal('modal')"></div>
 
-            <div class="fundo_modal" id="modal">
-                <div class="modal">
-                    <div class="radius-modelo-0 radius-modal-tamanho"></div>
-                    <span class="fechar" onclick="fecharModal('modal')">&times;</span>
+                <div class="fundo_modal" id="modal">
+                    <div class="modal">
+                        <div class="radius-modelo-0 radius-modal-tamanho"></div>
+                        <span class="fechar" onclick="fecharModal('modal')">&times;</span>
+                    </div>
                 </div>
-            </div>
 
 
-            <div class="radius-modelo-1 radius-form-modelos" onclick="abrirModal('modal-1')"></div>
+                <div class="radius-modelo-1 radius-form-modelos" onclick="abrirModal('modal-1')"></div>
 
-            <div class="fundo_modal" id="modal-1">
-                <div class="modal">
-                    <div class="radius-modelo-1 radius-modal-tamanho"></div>
-                    <span class="fechar" onclick="fecharModal('modal-1')">&times;</span>
+                <div class="fundo_modal" id="modal-1">
+                    <div class="modal">
+                        <div class="radius-modelo-1 radius-modal-tamanho"></div>
+                        <span class="fechar" onclick="fecharModal('modal-1')">&times;</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="radius-modelo-2 radius-form-modelos" onclick="abrirModal('modal-2')"></div>
+                <div class="radius-modelo-2 radius-form-modelos" onclick="abrirModal('modal-2')"></div>
 
-            <div class="fundo_modal" id="modal-2">
-                <div class="modal">
-                    <div class="radius-modelo-2 radius-modal-tamanho"></div>
-                    <span class="fechar" onclick="fecharModal('modal-2')">&times;</span>
+                <div class="fundo_modal" id="modal-2">
+                    <div class="modal">
+                        <div class="radius-modelo-2 radius-modal-tamanho"></div>
+                        <span class="fechar" onclick="fecharModal('modal-2')">&times;</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="radius-modelo-3 radius-form-modelos" onclick="abrirModal('modal-3')"></div>
+                <div class="radius-modelo-3 radius-form-modelos" onclick="abrirModal('modal-3')"></div>
 
-            <div class="fundo_modal" id="modal-3">
-                <div class="modal">
-                    <div class="radius-modelo-3 radius-modal-tamanho"></div>
-                    <span class="fechar" onclick="fecharModal('modal-3')">&times;</span>
+                <div class="fundo_modal" id="modal-3">
+                    <div class="modal">
+                        <div class="radius-modelo-3 radius-modal-tamanho"></div>
+                        <span class="fechar" onclick="fecharModal('modal-3')">&times;</span>
+                    </div>
                 </div>
-            </div>
 
-            <div class="radius-modelo-4 radius-form-modelos" onclick="abrirModal('modal-4')"></div>
+                <div class="radius-modelo-4 radius-form-modelos" onclick="abrirModal('modal-4')"></div>
 
 
-            <div class="fundo_modal" id="modal-4">
-                <div class="modal">
-                    <div class="radius-modelo-4 radius-modal-tamanho"></div>
-                    <span class="fechar" onclick="fecharModal('modal-4')">&times;</span>
+                <div class="fundo_modal" id="modal-4">
+                    <div class="modal">
+                        <div class="radius-modelo-4 radius-modal-tamanho"></div>
+                        <span class="fechar" onclick="fecharModal('modal-4')">&times;</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -479,9 +481,9 @@
                 positivamente <br>
                 a correta previsão das condições inegavelmente <br> apropriadas objetivos.</p>
         </div>
-
-        <div class="sobre-img"></div>
-
+        <div class="sobre-img">
+            <img src="imagens/Sobre-icone.png" alt="">
+        </div>
     </div>
     <footer>
 
@@ -544,21 +546,11 @@
         });
 
         $('.carousel').slick({
-
             infinite: true,
             slidesToShow: 4,
             slidesToScroll: 4,
             adaptiveHeight: true,
             responsive: [
-                {
-                    breakpoint: 1025,
-                    settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
-                        infinite: true,
-
-                    }
-                },
                 {
                     breakpoint: 770,
                     settings: {
@@ -569,10 +561,22 @@
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 620,
                     settings: {
-                        slidesToShow: 4,
-                        slidesToScroll: 4
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                        autoplay: true,
+                        autoplaySpeed: 3000
                     }
                 },
                 {
@@ -598,7 +602,7 @@
             autoplaySpeed: 2000,
             responsive: [
                 {
-                    breakpoint: 1025,
+                    breakpoint: 770,
                     settings: {
                         slidesToShow: 4,
                         slidesToScroll: 4,
@@ -607,19 +611,19 @@
                     }
                 },
                 {
-                    breakpoint: 770,
+                    breakpoint: 620,
                     settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                         infinite: true,
-
                     }
                 },
                 {
-                    breakpoint: 600,
+                    breakpoint: 450,
                     settings: {
                         slidesToShow: 2,
-                        slidesToScroll: 2
+                        slidesToScroll: 2,
+                        arrows: false
                     }
                 },
                 {
@@ -629,9 +633,6 @@
                         slidesToScroll: 1
                     }
                 }
-                // You can unslick at a given breakpoint now by adding:
-                // settings: "unslick"
-                // instead of a settings object
             ]
         });
 

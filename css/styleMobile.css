@@ -55,7 +55,7 @@
 
      .submit-line {
          justify-self: center;
-         margin-left : 100px;
+         margin-left : 20px;
          max-width   : 500px;
          flex        : 1 0 auto;
      }
@@ -113,10 +113,10 @@
          align-self : center;
      }
 
-    .submit-lente {
-        width : 35px;
-        height: 24px;
-    }
+     .submit-lente {
+         width : 35px;
+         height: 24px;
+     }
 
      .carrinho {
          margin-left: 20px;
@@ -144,7 +144,7 @@
          background-image: url('../imagens/radius-modelo-0.jpeg');
      }
 
-     
+
  }
 
 
@@ -166,6 +166,7 @@ ______                  __ _      _
 
      .beneficios h4 {
          font-size: 1em;
+         font-weight: bold;
          color    : #707070;
      }
 
@@ -181,30 +182,51 @@ ______                  __ _      _
 
  @media (max-width: 425px) {
 
-    .bg-beneficios {
-        overflow: hidden;
+     .bg-beneficios {
+         overflow: hidden;
+     }
+
+     .text-bene p {
+         font-size: 11px;
+     }
+
+     .beneficios h4 {
+        font-size: 13px;
     }
 
-    .text-bene p {
-        font-size: 0.7em;
-    }
+     .beneficios {
+         max-width                : 850px;
+         width                    : 200%;
+         animation-name           : animacao;
+         animation-duration       : 15s;
+         animation-iteration-count: infinite;
+     }
 
-    .beneficios {
-        max-width: 850px;
-        width: 200%;
-        animation-name: animacao;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-    }
+     @keyframes animacao {
+         0% {
+             margin-left: 0;
+         }
 
-    @keyframes animacao {
-        0% {margin-left: 0;}
-        25% {margin-left: 0;}
-        30% {margin-left: -95%}
-        75% {margin-left: -95%}
-        80% {margin-right: 0;}
-        100% {margin-right: 0;}
-    }
+         25% {
+             margin-left: 0;
+         }
+
+         30% {
+             margin-left: -95%
+         }
+
+         75% {
+             margin-left: -95%
+         }
+
+         80% {
+             margin-right: 0;
+         }
+
+         100% {
+             margin-right: 0;
+         }
+     }
  }
 
 
@@ -226,49 +248,46 @@ ______                  __ _      _
      }
 
      .flex-categoria {
-        max-width: 900px;
-        margin   : auto;
-        gap      : 10px;
-    }
+         max-width: 900px;
+         margin   : auto;
+         gap      : 10px;
+     }
 
      .categoria-form {
          width : 300px;
          height: 330px;
      }
-
-
-
-     /* bg-comercial*/
-
-    
-
  }
-
 
  @media (max-width: 425px) {
 
-    h2 {
-        font-size: 1em;
-    }
+     h2 {
+         font-size: 1em;
+     }
 
-    .block-categoria {
-        margin-bottom: 0;
-    }
+     .block-categoria {
+         margin-bottom: 0;
+         width        : 30px;
+     }
 
      .flex-categoria {
          flex-wrap: wrap;
      }
 
      .categoria-form {
-        width : 48%;
-        height: 250px;
-    }
+         width : 48%;
+         height: 250px;
+     }
+
+
+     /*comercial*/
+
+     .banner-comercial {
+         display: none;
+     }
 
 
  }
-
-
-
 
  /*
 ______                            
@@ -309,8 +328,19 @@ ______
      }
 
      .carousel img {
-         width : 200px;
-         height: 300px;
+        width: 180px;
+        height: 230px;
+     }
+ }
+
+
+ /* 425px - Mobile */
+
+ @media (max-width: 425px) {
+
+     .carousel img {
+         width : 170px;
+         height: 220px;
      }
  }
 
@@ -331,12 +361,16 @@ ______          _ _            ___  ___          _      _
          background-position: unset;
      }
 
+     .radius-overflow {
+         flex-wrap: nowrap;
+     }
+
      .modal {
-         width     : 60%;
-         height    : 65%;
+         width     : 90%;
+         height    : 80%;
          background: #fff;
          border    : 1px solid #000;
-         margin    : 8px auto 0 auto;
+         margin    : 50px 10px;
      }
 
      .radius-modal-tamanho {
@@ -345,6 +379,24 @@ ______          _ _            ___  ___          _      _
          background-size    : cover;
          background-position: bottom;
          background-repeat  : no-repeat;
+     }
+ }
+
+ @media (max-width: 425px) {
+     .radius-model {
+         overflow: scroll;
+     }
+
+     .radius-overflow {
+         width          : 180%;
+         flex-wrap      : nowrap;
+         justify-content: unset;
+         gap: 40px;     
+     }
+
+     .radius-form-modelos {
+         width : 100px;
+         height: 100px;
      }
  }
 
@@ -361,6 +413,24 @@ ______          _ _            ___  ___          _      _
  @media (max-width: 1024px) {
      .block-imp-items {
          padding: 20px;
+     }
+ }
+
+ @media (max-width: 425px) {
+     .block-imp-items {
+         margin: 0;
+     }
+
+     .imperdiveis {
+         margin-top: 10px;
+     }
+
+     .imp-img-1 {
+        height: 200px;
+     }
+
+     .imp-img-2 {
+         height: 200px;
      }
  }
 
@@ -388,13 +458,56 @@ ______          _ _            ___  ___          _      _
      }
  }
 
+ @media (max-width: 425px) {
+     .bg-top {
+         background: transparent;
+         margin-bottom: 5px;
+     }
+
+     .slider-for img {
+         width: 180px;
+         height: 230px;
+     }
+ }
+
  /* SObre*/
 
  @media (max-width: 1024px) {
-     .sobre-img {
-         height             : 50vw;
-         width              : 350px;
-         background-position: center;
-         align-self         : center;
-     }
+    .sobre {
+        justify-content: center;
+    }
+
+    .sobre-info h3 {
+        font-size: 16px;
+    }
+
+    .sobre-info p {
+        font-size: 13px;
+    }
+    
+    .sobre-info {
+        max-width: 100%;
+    }
+
+    .sobre-img img {
+        width: 300px;
+    }
+
  }
+
+ /*
+______          _            
+|  ___|        | |           
+| |_ ___   ___ | |_ ___ _ __ 
+|  _/ _ \ / _ \| __/ _ \ '__|
+| || (_) | (_) | ||  __/ |   
+\_| \___/ \___/ \__\___|_|    */
+
+
+@media (max-width: 425px) {
+    .newsletter {
+        padding: 0;
+        padding-bottom: 20px;
+    }
+    
+}
