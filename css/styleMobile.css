@@ -123,6 +123,24 @@
      }
  }
 
+ /* 375px - Mobile M */
+ @media (max-width: 375px) {
+    .nav-button-style {
+        margin-left: 0;
+    }
+
+    .img-lent {
+        margin-left: 7px;
+    }
+    
+    .logo {
+        width: 20px;
+    }
+
+    .carrinho {
+        margin-left: 10px;
+    }
+ }
 
 
  /* 
@@ -194,6 +212,11 @@ ______                  __ _      _
         font-size: 13px;
     }
 
+    .icon-bene img {
+        width: 11px;
+        height: 11px;
+    }
+
      .beneficios {
          max-width                : 850px;
          width                    : 200%;
@@ -229,7 +252,16 @@ ______                  __ _      _
      }
  }
 
+ /* 320px - Mobile S*/ 
+ @media (max-width: 320px) {
+    .text-bene p {
+        font-size: 9px;
+    }
 
+    .beneficios h4 {
+       font-size: 11px;
+   }
+ }
  /*
  _____       _                        _           
 /  __ \     | |                      (_)          
@@ -334,7 +366,7 @@ ______
  }
 
 
- /* 425px - Mobile */
+ /* 425px - Mobile L*/
 
  @media (max-width: 425px) {
 
@@ -344,7 +376,21 @@ ______
      }
  }
 
+ /* 375px - Mobile M*/
 
+ @media (max-width: 375px) {
+     .carousel img {
+         width: 150px;
+     }
+ }
+
+ /* 320px - Mobile S*/
+ @media (max-width: 320px) {
+    .carousel img {
+        width: 120px;
+        height: 200px;
+    }
+ }
  /*
 ______          _ _            ___  ___          _      _ 
 | ___ \        | (_)           |  \/  |         | |    | |
@@ -394,9 +440,14 @@ ______          _ _            ___  ___          _      _
          gap: 40px;     
      }
 
+ }
+
+ /* 320px - Mobile S*/
+
+ @media (max-width: 320px) {
      .radius-form-modelos {
-         width : 100px;
-         height: 100px;
+         width: 80px;
+         height: 80px;
      }
  }
 
@@ -470,6 +521,24 @@ ______          _ _            ___  ___          _      _
      }
  }
 
+ /* 375px - Mobile M*/ 
+ @media (max-width: 375px) {
+
+    .slider-for img {
+        width: 160px;
+        height: 220px;
+    }
+ }
+
+  /* 320px - Mobile S*/ 
+  @media (max-width: 375px) {
+
+    .slider-for img {
+        width: 120px;
+        height: 200px;
+    }
+ }
+
  /* SObre*/
 
  @media (max-width: 1024px) {
@@ -492,7 +561,12 @@ ______          _ _            ___  ___          _      _
     .sobre-img img {
         width: 300px;
     }
+ }
 
+ @media (max-width: 320px) {
+     .sobre-img img {
+         width: 200px;
+     }
  }
 
  /*
@@ -510,4 +584,20 @@ ______          _
         padding-bottom: 20px;
     }
     
+    .newsletter-info h3 {
+        font-size: 1.5em
+    }
+
+    .newsletter-info p{
+        font-size: .8rem;
+    }
+    
+    .newsletter-form input {
+        font-size: 1rem;
+    }
+
+    .newsletter-form button {
+        
+        font-size: 12px;
+    }
 }
