@@ -380,7 +380,7 @@ ______
 
  @media (max-width: 375px) {
      .carousel img {
-         width: 150px;
+         width: 155px;
      }
  }
 
@@ -531,7 +531,7 @@ ______          _ _            ___  ___          _      _
  }
 
   /* 320px - Mobile S*/ 
-  @media (max-width: 375px) {
+  @media (max-width: 320px) {
 
     .slider-for img {
         width: 120px;

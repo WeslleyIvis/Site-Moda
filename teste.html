@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background: linear-gradient(72deg, #3DE880 1%, #8956F3 99%);
+        }
+
+        .content {
+            height: 520px;
+            width: 935px;
+            border-radius: 20px;
+            overflow: hidden;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .navigation {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translate(-50%);
+            display: flex;
+        }
+
+        .bar {
+            width: 70px;
+            height: 17px;
+            border: 2px solid white;
+            margin: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: .6s;
+        }
+
+        .bar:hover {
+            background-color: green;
+        }
+
+        input {
+            display: none;
+        }
+
+        .slides {
+            display: flex;
+            width: 500%;
+            height: 100%;
+        }
+
+        .slide {
+            width: 20%;
+            transition: .6s;
+        }
+
+        .slide img {
+            width: 100%;
+            height: 100%;
+        }
+
+        #slide1:checked~.s1 {
+            margin-left: 0;
+        }
+
+        #slide2:checked~.s1 {
+            margin-left: -20%;
+        }
+        
+        #slide3:checked~.s1 {
+            margin-left: -40%;
+        }
+        
+        #slide4:checked~.s1 {
+            margin-left: -60%;
+        }
+        
+        #slide5:checked~.s1 {
+            margin-left: -80%;
+        }
+        
+
+    </style>
+</head>
+
+<body>
+
+    <div class="content">
+        <div class="slides">
+            <input type="radio" name="slide" id="slide1" checked>
+            <input type="radio" name="slide" id="slide2">
+            <input type="radio" name="slide" id="slide3">
+            <input type="radio" name="slide" id="slide4">
+            <input type="radio" name="slide" id="slide5">
+
+
+            <div class="slide s1">
+                <img src="https://animotaku.fr/wp-content/uploads/2021/06/Blue-Period-anime-visuel-1.jpeg"
+                    alt="Blue period">
+            </div>
+            
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/R.6b57f5d4335611004d8167db7aeffcf2?rik=cpZDbOlfpGVlew&riu=http%3a%2f%2fimages5.fanpop.com%2fimage%2fphotos%2f26000000%2fTeam-Dai-Gurren-tengen-toppa-gurren-lagann-26043515-600-423.jpg&ehk=40%2bVmNK%2f358GKljR95gtH%2fCbOXTVyDf%2f1sz%2b8iwzFd8%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Blue period">
+            </div>
+
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/R.e5afa288a44aace3f8e020d372a440dd?rik=x6%2bRSBjnMuooIw&riu=http%3a%2f%2f5b0988e595225.cdn.sohucs.com%2fimages%2f20190925%2f8f9610ab671645b2b4513ed584f6b25c.jpeg&ehk=Li3aiCcBdJ5VNWc8tSC6zq7z5q08fE49pt7QJlWRBKs%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Blue period">
+            </div>
+
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/R.a91bb1c9eba4ef55b57a0b6b182684ec?rik=R6TLpXA%2bNaTYyw&riu=http%3a%2f%2fcdn.wallpaperhi.com%2f1922x1296%2f20120627%2fcode+geass+kururugi+suzaku+stadtfeld+kallen+lamperouge+lelouch+cc+1922x1296+wallpaper_www.wallpaperhi.com_21.jpg&ehk=OiraVq6ybt%2bNF5WU0UQiNDpK9bhk6kEzz8dMZF%2fhGEc%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Blue period">
+            </div>
+
+              <div class="slide">
+                <img src="https://th.bing.com/th/id/R.e54b80180095c161a43e0ef7987dacd6?rik=AdYCfvAigjX1kQ&riu=http%3a%2f%2fwww.wallpaperhi.com%2fthumbnails%2fdetail%2f20120602%2fcode+geass+nu+villetta+lamperouge+lelouch+fenette+shirley+lamperouge+rolo+rivalz+cardemonde+ashford_www.wallpaperhi.com_96.jpg&ehk=ymWV5EqNl9yjQko6pRlBwGGcRrJC3fsqXuXEYzH4Na4%3d&risl=&pid=ImgRaw&r=0"
+                    alt="Code Geass">
+            </div>
+
+
+                    <div class="navigation">
+                        <label class="bar" for="slide1"></label>
+                        <label class="bar" for="slide2"></label>
+                        <label class="bar" for="slide3"></label>
+                        <label class="bar" for="slide4"></label>
+                        <label class="bar" for="slide5"></label>
+                    </div>
+
+                </div>
+</body>
+
+</html>
